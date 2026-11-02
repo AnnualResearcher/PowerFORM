@@ -1,0 +1,39 @@
+{
+ "maps": "physics",
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "first_crossing": {
+  "infeasible_fraction": {
+   "threshold": 0.5,
+   "pretrained": 500,
+   "scratch": 2250
+  },
+  "gap_pct_median": {
+   "threshold": 0.0,
+   "pretrained": 700,
+   "scratch": 2500
+  }
+ },
+ "late_seed_mean_infeasible_fraction": {
+  "steps": [
+   5000,
+   20000
+  ],
+  "pretrained": {
+   "min": 0.3137254901960784,
+   "max": 0.32941176470588235,
+   "n_points": 16
+  },
+  "scratch": {
+   "min": 0.303921568627451,
+   "max": 0.44313725490196076,
+   "n_points": 16
+  }
+ }
+}

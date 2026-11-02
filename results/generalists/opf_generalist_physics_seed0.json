@@ -1,0 +1,222 @@
+{
+  "maps": "physics",
+  "seed": 0,
+  "d_model": 216,
+  "K": 8,
+  "n_cost_feats": 10,
+  "generic_hidden": null,
+  "train_grids": [
+    "case57",
+    "case118",
+    "case500"
+  ],
+  "variant": "fulltop",
+  "n_train_per_grid": 8000,
+  "n_train_total": 24000,
+  "steps": 20000,
+  "batch": 4,
+  "scenario_visits": 80000,
+  "lr": 0.0003,
+  "clip": 1.0,
+  "w_bal": 5.0,
+  "params": 14503496,
+  "train_s": 12146.879647016525,
+  "data_provenance": {
+    "train": [
+      {
+        "case": "pglib_opf_case57_ieee",
+        "alias": "case57",
+        "variant": "fulltop",
+        "split": "train",
+        "n": 8000,
+        "split_range": [
+          0,
+          13500
+        ],
+        "example_index_min": 0,
+        "example_index_max": 13499,
+        "n_cost_feats": 10
+      },
+      {
+        "case": "pglib_opf_case118_ieee",
+        "alias": "case118",
+        "variant": "fulltop",
+        "split": "train",
+        "n": 8000,
+        "split_range": [
+          0,
+          13500
+        ],
+        "example_index_min": 0,
+        "example_index_max": 13499,
+        "n_cost_feats": 10
+      },
+      {
+        "case": "pglib_opf_case500_goc",
+        "alias": "case500",
+        "variant": "fulltop",
+        "split": "train",
+        "n": 8000,
+        "split_range": [
+          0,
+          13500
+        ],
+        "example_index_min": 0,
+        "example_index_max": 13499,
+        "n_cost_feats": 10
+      }
+    ],
+    "val": [
+      {
+        "case": "pglib_opf_case57_ieee",
+        "alias": "case57",
+        "variant": "fulltop",
+        "split": "val",
+        "n": 100,
+        "split_range": [
+          13500,
+          14250
+        ],
+        "example_index_min": 13500,
+        "example_index_max": 14249,
+        "n_cost_feats": 10
+      },
+      {
+        "case": "pglib_opf_case118_ieee",
+        "alias": "case118",
+        "variant": "fulltop",
+        "split": "val",
+        "n": 100,
+        "split_range": [
+          13500,
+          14250
+        ],
+        "example_index_min": 13500,
+        "example_index_max": 14249,
+        "n_cost_feats": 10
+      },
+      {
+        "case": "pglib_opf_case500_goc",
+        "alias": "case500",
+        "variant": "fulltop",
+        "split": "val",
+        "n": 100,
+        "split_range": [
+          13500,
+          14250
+        ],
+        "example_index_min": 13500,
+        "example_index_max": 14249,
+        "n_cost_feats": 10
+      }
+    ]
+  },
+  "val_probe": {
+    "case57": {
+      "cost_mape_pct": 0.42434260421649617,
+      "v_mape": 0.12014116328580497,
+      "th_mae_deg": 0.20292688071621734,
+      "pg_mae": 0.023314511737560443,
+      "n_nonconverged": 0,
+      "n_eval": 100
+    },
+    "case118": {
+      "cost_mape_pct": 0.06321923529507337,
+      "v_mape": 0.10885330312966365,
+      "th_mae_deg": 0.6032479928018296,
+      "pg_mae": 0.00685369347484969,
+      "n_nonconverged": 0,
+      "n_eval": 100
+    },
+    "case500": {
+      "cost_mape_pct": 0.5438424346199612,
+      "v_mape": 0.12670749850300414,
+      "th_mae_deg": 0.6924148104920019,
+      "pg_mae": 0.005908677224157391,
+      "n_nonconverged": 0,
+      "n_eval": 100
+    }
+  },
+  "loss_history": [
+    {
+      "step": 1000,
+      "loss": 0.02394121710100897
+    },
+    {
+      "step": 2000,
+      "loss": 0.02030041810516084
+    },
+    {
+      "step": 3000,
+      "loss": 0.0015326734803934317
+    },
+    {
+      "step": 4000,
+      "loss": 0.019944497077391734
+    },
+    {
+      "step": 5000,
+      "loss": 0.01966840749823544
+    },
+    {
+      "step": 6000,
+      "loss": 0.0383147971148403
+    },
+    {
+      "step": 7000,
+      "loss": 0.021095364982036218
+    },
+    {
+      "step": 8000,
+      "loss": 0.019835215570989585
+    },
+    {
+      "step": 9000,
+      "loss": 0.03668845267981771
+    },
+    {
+      "step": 10000,
+      "loss": 0.019022207718639703
+    },
+    {
+      "step": 11000,
+      "loss": 0.019919799011805635
+    },
+    {
+      "step": 12000,
+      "loss": 0.002387761350240869
+    },
+    {
+      "step": 13000,
+      "loss": 0.05546631585211499
+    },
+    {
+      "step": 14000,
+      "loss": 0.001601262457071609
+    },
+    {
+      "step": 15000,
+      "loss": 0.01990647036372575
+    },
+    {
+      "step": 16000,
+      "loss": 0.019067955331657196
+    },
+    {
+      "step": 17000,
+      "loss": 0.037350646196034426
+    },
+    {
+      "step": 18000,
+      "loss": 0.018831239985685422
+    },
+    {
+      "step": 19000,
+      "loss": 0.0007772998684114796
+    },
+    {
+      "step": 20000,
+      "loss": 0.01793041325285674
+    }
+  ]
+}

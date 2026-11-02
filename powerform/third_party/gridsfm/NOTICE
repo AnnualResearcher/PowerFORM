@@ -1,0 +1,34 @@
+GridSFM: vendored third-party code
+==================================
+
+Source:   https://github.com/microsoft/GridSFM
+Commit:   1ca775fd436d7ce013a1c0ab946e61ac7ef59ad6
+Package:  gridsfm 1.1.0 (the repository's model/gridsfm/ directory)
+License:  MIT, Copyright (c) Microsoft Corporation; see LICENSE here.
+
+Vendored unmodified (byte-identical to the commit above):
+
+  blocks.py  checkpoint.py  cycle_basis.py  data.py  dc_prior.py  eval.py
+  finetune_opfdata.py  hodge_pe.py  loss.py  model.py  pe_features.py
+  schema.py  signed_incidence.py  stress_features.py  synthetic.py
+
+Not vendored: opfdata_train.py (it wraps the OPFData downloader; the Table 1 corpus
+is not OPFData), hf_util/, and upstream's package __init__.py. The __init__.py in
+this directory is a replacement that re-exports only names from the modules present;
+it is the only file here not taken from upstream.
+
+What uses it:
+
+  powerform/model/baselines/gridsfm.py
+    * the decision row: GridTransformerBackbone with its Pg and V heads read as the
+      two decisions (p_g, vm_set) and its theta, Qg and feasibility heads deleted,
+      trained with the decision recipe;
+    * the state-regression row: the stock backbone from random init, trained with
+      GridSFM's own fine-tuning recipe (finetune_opfdata, compute_loss,
+      SyntheticMixedDataset) and scored on the state it emits.
+
+Runtime dependencies (not vendored): torch, torch_geometric, numpy, scipy,
+huggingface_hub (imported by checkpoint.py).
+
+cycle_basis.CycleBasisCache writes a small disk cache under $XDG_CACHE_HOME (default
+~/.cache); set XDG_CACHE_HOME to keep it elsewhere.

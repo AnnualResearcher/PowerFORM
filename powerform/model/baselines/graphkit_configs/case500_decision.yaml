@@ -1,0 +1,76 @@
+# gridfm-graphkit on the Table 1 corpus: the config the graphkit decision row builds
+# its model, dataset transforms and normalizer from. The row's loop is the decision
+# recipe, so only the `model`, `data` and `task` blocks are read.
+#
+# It is graphkit's examples/config/HGNS_OPF_datakit_case500.yaml at commit b3d663b6,
+# with these changes:
+#
+#   training.devices: 1, training.batch_size: 16, training.strategy: single_device_cuda
+#       The upstream config is annotated for 2 GPUs at 8 each, a global batch of 16.
+#   data.split_from_existing_files
+#       Upstream splits by random ratios; the test split here is the Table 1 hold-out,
+#       load_scenario_idx 29500..29999 (graphkit.make_splits writes the files).
+#   callbacks.patience: 20 (upstream 100)
+#
+# The 12-layer GNS_heterogeneous, hidden 48, 8 heads, the four losses and their
+# weights, the optimizer block and the seed are upstream's.
+task:
+  task_name: OptimalPowerFlow
+data:
+  baseMVA: 100
+  mask_value: 0.0
+  normalization: HeteroDataMVANormalizer
+  networks:
+  - case500_goc
+  scenarios:
+  - 30000
+  test_ratio: 0.1
+  val_ratio: 0.1
+  workers: 16
+  split_by_load_scenario_idx: false
+  split_from_existing_files: SET_BY_LAUNCHER  # graphkit.config_with_splits fills this in
+model:
+  attention_head: 8
+  edge_dim: 10
+  hidden_size: 48
+  input_bus_dim: 15
+  input_gen_dim: 6
+  output_bus_dim: 2
+  output_gen_dim: 1
+  num_layers: 12
+  type: GNS_heterogeneous
+optimizer:
+  beta1: 0.9
+  beta2: 0.999
+  learning_rate: 0.0005
+  lr_decay: 0.7
+  lr_patience: 5
+training:
+  batch_size: 16
+  epochs: 200
+  loss_weights:
+  - 0.1
+  - 0.1
+  - 0.75
+  - 0.001
+  losses:
+  - LayeredWeightedPhysics
+  - MaskedGenMSE
+  - MaskedBusMSE
+  - QgViolationPenalty
+  loss_args:
+  - base_weight: 0.5
+  - {}
+  - {}
+  - {}
+  accelerator: gpu
+  devices: 1
+  # graphkit's cli.py forces DDPStrategy when the accelerator is not mps/cpu and the
+  # strategy is "auto" or "ddp", and Windows PyTorch has no NCCL. graphkit passes
+  # this registered strategy through unchanged (graphkit.launch_graphkit_cli).
+  strategy: single_device_cuda
+seed: 0
+verbose: true
+callbacks:
+  patience: 20
+  tol: 0

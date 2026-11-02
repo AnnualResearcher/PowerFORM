@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+*.egg-info/
+
+# Fetched or generated, never tracked
+/checkpoints/
+/datasets/
+/outputs/
+/graphkit_splits/
+*.part

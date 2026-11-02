@@ -1,0 +1,15 @@
+{
+ "maps": "physics",
+ "arm": "pretrained",
+ "seed": 4,
+ "grid": "case57",
+ "n_val": 157,
+ "vm_tol": 1e-06,
+ "ok": 53,
+ "diverged": 1,
+ "out_of_box": 31,
+ "n_scored": 85,
+ "n_rejected": 32,
+ "infeasible_fraction": 0.3764705882352941,
+ "diverged_share_of_rejections": 0.03125
+}

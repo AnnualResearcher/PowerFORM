@@ -1,0 +1,41 @@
+network:
+  name: "case500_goc"
+  source: "pglib"
+  network_dir: "scripts/grids"
+
+load:
+  generator: "agg_load_profile"
+  agg_profile: "default"
+  scenarios: 30000
+  sigma: 0.2
+  change_reactive_power: true
+  global_range: 0.4
+  max_scaling_factor: 4.0
+  step_size: 0.05
+  start_scaling_factor: 0.8
+
+topology_perturbation:
+  type: "none"
+  k: 1
+  n_topology_variants: 1
+  elements: [branch]
+
+generation_perturbation:
+  type: "none"
+
+admittance_perturbation:
+  type: "none"
+
+settings:
+  num_processes: 1
+  data_dir: "./datasets/case500_datakit/case500_30k"
+  large_chunk_size: 1000
+  overwrite: true
+  mode: "opf"
+  include_dc_res: false
+  pf_fast: true
+  dcpf_fast: true
+  enable_solver_logs: false
+  max_iter: 1000
+  pf_solver: "powermodel"
+  seed: 0

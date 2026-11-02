@@ -1,0 +1,9 @@
+{
+ "grid": "case57",
+ "N": 57,
+ "E": 80,
+ "bridges_full_graph": 1,
+ "n_samples": 20000,
+ "rng_seed": 0,
+ "disconnect_fraction": 0.1542
+}

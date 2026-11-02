@@ -1,0 +1,13 @@
+# Tested with Python 3.12.7. On Windows this installs a CPU-only torch; see README.
+torch==2.8.0
+numpy==2.5.1
+scipy==1.18.0
+matplotlib==3.11.1
+pandas==3.0.5
+pyarrow==25.0.0
+pyyaml==6.0.3
+huggingface_hub==0.36.2
+# GridSFM baseline (vendored under powerform/third_party/gridsfm)
+torch_geometric==2.8.0.post1
+# The graphkit rows of Table 1 use a separate environment:
+# see powerform/model/baselines/README.md.

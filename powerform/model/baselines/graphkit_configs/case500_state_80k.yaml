@@ -1,0 +1,71 @@
+# gridfm-graphkit on the Table 1 corpus, graphkit's own recipe from random init: the
+# graphkit state-regression row, run through graphkit's CLI
+# (graphkit.launch_graphkit_cli, `train` with no --model_path).
+#
+# It is case500_decision.yaml with one key changed, the budget:
+#
+#   training.epochs: 3
+#
+# 3 epochs of 26,538 train scenarios = 79,614 samples, the closest Lightning's integer
+# max_epochs gets to 80k. graphkit's validation split of 2,949 drives its best-epoch
+# checkpoint selection, which is part of its recipe. Early stopping cannot fire within
+# 3 epochs.
+#
+# Seeds 1 and 2 of the row change `seed` only.
+task:
+  task_name: OptimalPowerFlow
+data:
+  baseMVA: 100
+  mask_value: 0.0
+  normalization: HeteroDataMVANormalizer
+  networks:
+  - case500_goc
+  scenarios:
+  - 30000
+  test_ratio: 0.1
+  val_ratio: 0.1
+  workers: 16
+  split_by_load_scenario_idx: false
+  split_from_existing_files: SET_BY_LAUNCHER  # graphkit.config_with_splits fills this in
+model:
+  attention_head: 8
+  edge_dim: 10
+  hidden_size: 48
+  input_bus_dim: 15
+  input_gen_dim: 6
+  output_bus_dim: 2
+  output_gen_dim: 1
+  num_layers: 12
+  type: GNS_heterogeneous
+optimizer:
+  beta1: 0.9
+  beta2: 0.999
+  learning_rate: 0.0005
+  lr_decay: 0.7
+  lr_patience: 5
+training:
+  batch_size: 16
+  epochs: 3
+  loss_weights:
+  - 0.1
+  - 0.1
+  - 0.75
+  - 0.001
+  losses:
+  - LayeredWeightedPhysics
+  - MaskedGenMSE
+  - MaskedBusMSE
+  - QgViolationPenalty
+  loss_args:
+  - base_weight: 0.5
+  - {}
+  - {}
+  - {}
+  accelerator: gpu
+  devices: 1
+  strategy: single_device_cuda
+seed: 0
+verbose: true
+callbacks:
+  patience: 20
+  tol: 0

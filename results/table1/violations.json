@@ -1,0 +1,703 @@
+{
+  "tolerance_pu": 1e-06,
+  "n_scenarios": 500,
+  "n_free_buses": 113,
+  "rows": {
+    "physics_seed0": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.16,
+        "scenarios_with_any": 500,
+        "worst": 0.014040565380728509
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.438,
+        "scenarios_with_any": 500,
+        "worst": 0.7359437556740971
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.198,
+        "scenarios_with_any": 99,
+        "worst": 0.5190465006265885,
+        "slack_bus_scenarios": 99,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.5190465006265885
+      },
+      "thermal": {
+        "max_loading": 1.0274769586463879,
+        "overloads_per_scenario": 0.382,
+        "scenarios_with_overload": 181
+      },
+      "violated_inequalities_per_scenario": 23.178,
+      "scenarios_with_any": 500
+    },
+    "physics_seed1": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.702,
+        "scenarios_with_any": 500,
+        "worst": 0.010229558756244872
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.374,
+        "scenarios_with_any": 500,
+        "worst": 0.6233044445281056
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.402,
+        "scenarios_with_any": 201,
+        "worst": 0.6021631923049764,
+        "slack_bus_scenarios": 201,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.6021631923049764
+      },
+      "thermal": {
+        "max_loading": 1.0303224543739955,
+        "overloads_per_scenario": 0.39,
+        "scenarios_with_overload": 185
+      },
+      "violated_inequalities_per_scenario": 23.868,
+      "scenarios_with_any": 500
+    },
+    "physics_seed2": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 4.57,
+        "scenarios_with_any": 500,
+        "worst": 0.01395281250655378
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.448,
+        "scenarios_with_any": 500,
+        "worst": 0.6812882098060207
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.398,
+        "scenarios_with_any": 199,
+        "worst": 0.6523952608812547,
+        "slack_bus_scenarios": 199,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.6523952608812547
+      },
+      "thermal": {
+        "max_loading": 1.0324519804531977,
+        "overloads_per_scenario": 0.364,
+        "scenarios_with_overload": 174
+      },
+      "violated_inequalities_per_scenario": 22.78,
+      "scenarios_with_any": 500
+    },
+    "generic_seed0": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.206,
+        "scenarios_with_any": 500,
+        "worst": 0.01595263853708362
+      },
+      "derived_Q": {
+        "per_scenario_mean": 16.98,
+        "scenarios_with_any": 500,
+        "worst": 0.5988907167802715
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.372,
+        "scenarios_with_any": 186,
+        "worst": 0.6386200142577891,
+        "slack_bus_scenarios": 186,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.6386200142577891
+      },
+      "thermal": {
+        "max_loading": 1.0398476564303865,
+        "overloads_per_scenario": 0.34,
+        "scenarios_with_overload": 162
+      },
+      "violated_inequalities_per_scenario": 22.898,
+      "scenarios_with_any": 500
+    },
+    "generic_seed1": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.174,
+        "scenarios_with_any": 500,
+        "worst": 0.016473124877518064
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.732,
+        "scenarios_with_any": 500,
+        "worst": 0.782862467835999
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.786,
+        "scenarios_with_any": 393,
+        "worst": 0.764906893023868,
+        "slack_bus_scenarios": 393,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.764906893023868
+      },
+      "thermal": {
+        "max_loading": 1.0369956065864214,
+        "overloads_per_scenario": 0.34,
+        "scenarios_with_overload": 160
+      },
+      "violated_inequalities_per_scenario": 24.032,
+      "scenarios_with_any": 500
+    },
+    "generic_seed2": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.2,
+        "scenarios_with_any": 500,
+        "worst": 0.01697113692277874
+      },
+      "derived_Q": {
+        "per_scenario_mean": 16.61,
+        "scenarios_with_any": 500,
+        "worst": 0.4804295643880073
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.484,
+        "scenarios_with_any": 242,
+        "worst": 0.6090026793288565,
+        "slack_bus_scenarios": 242,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.6090026793288565
+      },
+      "thermal": {
+        "max_loading": 1.040337969042153,
+        "overloads_per_scenario": 0.356,
+        "scenarios_with_overload": 168
+      },
+      "violated_inequalities_per_scenario": 22.65,
+      "scenarios_with_any": 500
+    },
+    "mlp_seed0": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.666,
+        "scenarios_with_any": 500,
+        "worst": 0.01732427738465514
+      },
+      "derived_Q": {
+        "per_scenario_mean": 15.914,
+        "scenarios_with_any": 500,
+        "worst": 0.30914270929538895
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.81,
+        "scenarios_with_any": 405,
+        "worst": 1.346270765637712,
+        "slack_bus_scenarios": 405,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 1.346270765637712
+      },
+      "thermal": {
+        "max_loading": 1.0475183434500632,
+        "overloads_per_scenario": 0.32,
+        "scenarios_with_overload": 148
+      },
+      "violated_inequalities_per_scenario": 22.71,
+      "scenarios_with_any": 500
+    },
+    "mlp_seed1": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.948,
+        "scenarios_with_any": 500,
+        "worst": 0.01859894648227467
+      },
+      "derived_Q": {
+        "per_scenario_mean": 16.84,
+        "scenarios_with_any": 500,
+        "worst": 0.4404623292232934
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.09,
+        "scenarios_with_any": 45,
+        "worst": 0.5164474156419434,
+        "slack_bus_scenarios": 45,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.5164474156419434
+      },
+      "thermal": {
+        "max_loading": 1.0513239046150225,
+        "overloads_per_scenario": 0.392,
+        "scenarios_with_overload": 187
+      },
+      "violated_inequalities_per_scenario": 23.27,
+      "scenarios_with_any": 500
+    },
+    "mlp_seed2": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 6.858,
+        "scenarios_with_any": 500,
+        "worst": 0.018124885296433524
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.356,
+        "scenarios_with_any": 500,
+        "worst": 0.32096350073283636
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.29,
+        "scenarios_with_any": 145,
+        "worst": 0.8644727891916144,
+        "slack_bus_scenarios": 145,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.8644727891916144
+      },
+      "thermal": {
+        "max_loading": 1.0438510554249936,
+        "overloads_per_scenario": 0.422,
+        "scenarios_with_overload": 197
+      },
+      "violated_inequalities_per_scenario": 24.926,
+      "scenarios_with_any": 500
+    },
+    "gnn_seed0": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.464,
+        "scenarios_with_any": 500,
+        "worst": 0.015463989880660556
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.984,
+        "scenarios_with_any": 500,
+        "worst": 0.9636122273832951
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.358,
+        "scenarios_with_any": 179,
+        "worst": 0.926129282271237,
+        "slack_bus_scenarios": 179,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.926129282271237
+      },
+      "thermal": {
+        "max_loading": 1.0405009910110297,
+        "overloads_per_scenario": 0.376,
+        "scenarios_with_overload": 178
+      },
+      "violated_inequalities_per_scenario": 24.182,
+      "scenarios_with_any": 500
+    },
+    "gnn_seed1": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 4.626,
+        "scenarios_with_any": 500,
+        "worst": 0.01617175266837001
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.84,
+        "scenarios_with_any": 500,
+        "worst": 1.030968715464703
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.868,
+        "scenarios_with_any": 434,
+        "worst": 1.3810668141489728,
+        "slack_bus_scenarios": 434,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 1.3810668141489728
+      },
+      "thermal": {
+        "max_loading": 1.050137989442279,
+        "overloads_per_scenario": 0.314,
+        "scenarios_with_overload": 144
+      },
+      "violated_inequalities_per_scenario": 23.648,
+      "scenarios_with_any": 500
+    },
+    "gnn_seed2": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 4.03,
+        "scenarios_with_any": 498,
+        "worst": 0.015921485426971582
+      },
+      "derived_Q": {
+        "per_scenario_mean": 16.532,
+        "scenarios_with_any": 500,
+        "worst": 0.5667484126825918
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.766,
+        "scenarios_with_any": 383,
+        "worst": 1.0354999799935936,
+        "slack_bus_scenarios": 383,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 1.0354999799935936
+      },
+      "thermal": {
+        "max_loading": 1.0411924695459256,
+        "overloads_per_scenario": 0.314,
+        "scenarios_with_overload": 148
+      },
+      "violated_inequalities_per_scenario": 21.642,
+      "scenarios_with_any": 500
+    },
+    "graphkit_decision_seed0": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 1.646,
+        "scenarios_with_any": 431,
+        "worst": 0.011001004813692816
+      },
+      "derived_Q": {
+        "per_scenario_mean": 27.888,
+        "scenarios_with_any": 500,
+        "worst": 4.163534790251813
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.412,
+        "scenarios_with_any": 206,
+        "worst": 8.633786922499121,
+        "slack_bus_scenarios": 206,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 8.633786922499121
+      },
+      "thermal": {
+        "max_loading": 1.4616140027213824,
+        "overloads_per_scenario": 0.662,
+        "scenarios_with_overload": 250
+      },
+      "violated_inequalities_per_scenario": 30.608,
+      "scenarios_with_any": 500
+    },
+    "graphkit_decision_seed1": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 1.306,
+        "scenarios_with_any": 379,
+        "worst": 0.008768643453237468
+      },
+      "derived_Q": {
+        "per_scenario_mean": 26.878,
+        "scenarios_with_any": 500,
+        "worst": 5.558845253489003
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.712,
+        "scenarios_with_any": 356,
+        "worst": 8.377973693487226,
+        "slack_bus_scenarios": 356,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 8.377973693487226
+      },
+      "thermal": {
+        "max_loading": 1.319737399043942,
+        "overloads_per_scenario": 0.646,
+        "scenarios_with_overload": 244
+      },
+      "violated_inequalities_per_scenario": 29.542,
+      "scenarios_with_any": 500
+    },
+    "graphkit_decision_seed2": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 0.726,
+        "scenarios_with_any": 233,
+        "worst": 0.00937614707724821
+      },
+      "derived_Q": {
+        "per_scenario_mean": 27.796,
+        "scenarios_with_any": 500,
+        "worst": 5.468119041917894
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.88,
+        "scenarios_with_any": 440,
+        "worst": 10.22847183166161,
+        "slack_bus_scenarios": 440,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 10.22847183166161
+      },
+      "thermal": {
+        "max_loading": 1.7300555377601212,
+        "overloads_per_scenario": 0.924,
+        "scenarios_with_overload": 293
+      },
+      "violated_inequalities_per_scenario": 30.326,
+      "scenarios_with_any": 500
+    },
+    "graphkit_state_seed0": {
+      "state": "claimed",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 0.0,
+        "scenarios_with_any": 0,
+        "worst": 0.0
+      },
+      "derived_Q": {
+        "per_scenario_mean": 39.024,
+        "scenarios_with_any": 500,
+        "worst": 3.579113513610733
+      },
+      "derived_P": {
+        "per_scenario_mean": 29.264,
+        "scenarios_with_any": 500,
+        "worst": 3.4989447447888455,
+        "slack_bus_scenarios": 500,
+        "nonslack_per_scenario_mean": 28.264,
+        "slack_worst": 3.4989447447888455
+      },
+      "thermal": {
+        "max_loading": 0.9996974139717026,
+        "overloads_per_scenario": 0.0,
+        "scenarios_with_overload": 0
+      },
+      "violated_inequalities_per_scenario": 40.024,
+      "scenarios_with_any": 500
+    },
+    "graphkit_state_seed1": {
+      "state": "claimed",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 0.0,
+        "scenarios_with_any": 0,
+        "worst": 0.0
+      },
+      "derived_Q": {
+        "per_scenario_mean": 28.26,
+        "scenarios_with_any": 500,
+        "worst": 2.1141239736472577
+      },
+      "derived_P": {
+        "per_scenario_mean": 31.21,
+        "scenarios_with_any": 500,
+        "worst": 1.2932234787112393,
+        "slack_bus_scenarios": 500,
+        "nonslack_per_scenario_mean": 30.21,
+        "slack_worst": 0.6521714248562898
+      },
+      "thermal": {
+        "max_loading": 0.8226723418740179,
+        "overloads_per_scenario": 0.0,
+        "scenarios_with_overload": 0
+      },
+      "violated_inequalities_per_scenario": 29.26,
+      "scenarios_with_any": 500
+    },
+    "graphkit_state_seed2": {
+      "state": "claimed",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 0.0,
+        "scenarios_with_any": 0,
+        "worst": 0.0
+      },
+      "derived_Q": {
+        "per_scenario_mean": 32.944,
+        "scenarios_with_any": 500,
+        "worst": 1.7681761214403664
+      },
+      "derived_P": {
+        "per_scenario_mean": 38.38,
+        "scenarios_with_any": 500,
+        "worst": 1.849172902887295,
+        "slack_bus_scenarios": 500,
+        "nonslack_per_scenario_mean": 37.38,
+        "slack_worst": 1.849172902887295
+      },
+      "thermal": {
+        "max_loading": 0.9051165504438174,
+        "overloads_per_scenario": 0.0,
+        "scenarios_with_overload": 0
+      },
+      "violated_inequalities_per_scenario": 33.944,
+      "scenarios_with_any": 500
+    },
+    "gridsfm_decision_seed0": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 6.132,
+        "scenarios_with_any": 500,
+        "worst": 0.014647070448024824
+      },
+      "derived_Q": {
+        "per_scenario_mean": 16.99,
+        "scenarios_with_any": 500,
+        "worst": 0.5783710538271523
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.262,
+        "scenarios_with_any": 131,
+        "worst": 0.9955574837977146,
+        "slack_bus_scenarios": 131,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 0.9955574837977146
+      },
+      "thermal": {
+        "max_loading": 1.0472757078188373,
+        "overloads_per_scenario": 0.32,
+        "scenarios_with_overload": 152
+      },
+      "violated_inequalities_per_scenario": 23.704,
+      "scenarios_with_any": 500
+    },
+    "gridsfm_decision_seed1": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.704,
+        "scenarios_with_any": 500,
+        "worst": 0.014844104139125847
+      },
+      "derived_Q": {
+        "per_scenario_mean": 17.712,
+        "scenarios_with_any": 500,
+        "worst": 0.8797411555556769
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.772,
+        "scenarios_with_any": 386,
+        "worst": 1.8530880342502947,
+        "slack_bus_scenarios": 386,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 1.8530880342502947
+      },
+      "thermal": {
+        "max_loading": 1.052299150412482,
+        "overloads_per_scenario": 0.38,
+        "scenarios_with_overload": 179
+      },
+      "violated_inequalities_per_scenario": 24.568,
+      "scenarios_with_any": 500
+    },
+    "gridsfm_decision_seed2": {
+      "state": "realised",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 5.714,
+        "scenarios_with_any": 500,
+        "worst": 0.014650888464975864
+      },
+      "derived_Q": {
+        "per_scenario_mean": 16.94,
+        "scenarios_with_any": 500,
+        "worst": 0.8587405173899051
+      },
+      "derived_P": {
+        "per_scenario_mean": 0.712,
+        "scenarios_with_any": 356,
+        "worst": 1.460410436743782,
+        "slack_bus_scenarios": 356,
+        "nonslack_per_scenario_mean": 0.0,
+        "slack_worst": 1.460410436743782
+      },
+      "thermal": {
+        "max_loading": 1.0416339077497647,
+        "overloads_per_scenario": 0.344,
+        "scenarios_with_overload": 161
+      },
+      "violated_inequalities_per_scenario": 23.71,
+      "scenarios_with_any": 500
+    },
+    "gridsfm_state_seed0": {
+      "state": "claimed",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 0.0,
+        "scenarios_with_any": 0,
+        "worst": 2.3841857821338408e-08
+      },
+      "derived_Q": {
+        "per_scenario_mean": 24.782,
+        "scenarios_with_any": 500,
+        "worst": 2.026126461346601
+      },
+      "derived_P": {
+        "per_scenario_mean": 47.016,
+        "scenarios_with_any": 500,
+        "worst": 0.5901788070641913,
+        "slack_bus_scenarios": 500,
+        "nonslack_per_scenario_mean": 46.016,
+        "slack_worst": 0.5901788070641913
+      },
+      "thermal": {
+        "max_loading": 1.067097798745852,
+        "overloads_per_scenario": 0.274,
+        "scenarios_with_overload": 114
+      },
+      "violated_inequalities_per_scenario": 26.056,
+      "scenarios_with_any": 500
+    },
+    "gridsfm_state_seed1": {
+      "state": "claimed",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 0.0,
+        "scenarios_with_any": 0,
+        "worst": 2.3841857821338408e-08
+      },
+      "derived_Q": {
+        "per_scenario_mean": 24.742,
+        "scenarios_with_any": 500,
+        "worst": 0.8471203369271304
+      },
+      "derived_P": {
+        "per_scenario_mean": 44.512,
+        "scenarios_with_any": 500,
+        "worst": 0.8600784532412122,
+        "slack_bus_scenarios": 481,
+        "nonslack_per_scenario_mean": 43.55,
+        "slack_worst": 0.3085925295816594
+      },
+      "thermal": {
+        "max_loading": 1.057670050505817,
+        "overloads_per_scenario": 0.308,
+        "scenarios_with_overload": 139
+      },
+      "violated_inequalities_per_scenario": 26.012,
+      "scenarios_with_any": 500
+    },
+    "gridsfm_state_seed2": {
+      "state": "claimed",
+      "n_scenarios": 500,
+      "voltage_box": {
+        "per_scenario_mean": 0.0,
+        "scenarios_with_any": 0,
+        "worst": 2.3841857821338408e-08
+      },
+      "derived_Q": {
+        "per_scenario_mean": 20.308,
+        "scenarios_with_any": 500,
+        "worst": 1.0216629702388043
+      },
+      "derived_P": {
+        "per_scenario_mean": 64.996,
+        "scenarios_with_any": 500,
+        "worst": 0.5364160356981243,
+        "slack_bus_scenarios": 500,
+        "nonslack_per_scenario_mean": 63.996,
+        "slack_worst": 0.4945089737407251
+      },
+      "thermal": {
+        "max_loading": 1.0767560861203187,
+        "overloads_per_scenario": 0.402,
+        "scenarios_with_overload": 172
+      },
+      "violated_inequalities_per_scenario": 21.71,
+      "scenarios_with_any": 500
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+ "maps": "generic",
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "first_crossing": {
+  "infeasible_fraction": {
+   "threshold": 0.5,
+   "pretrained": 2000,
+   "scratch": null
+  },
+  "gap_pct_median": {
+   "threshold": 0.0,
+   "pretrained": 1750,
+   "scratch": 18000
+  }
+ },
+ "late_seed_mean_infeasible_fraction": {
+  "steps": [
+   5000,
+   20000
+  ],
+  "pretrained": {
+   "min": 0.27058823529411763,
+   "max": 0.30196078431372547,
+   "n_points": 16
+  },
+  "scratch": {
+   "min": 0.35294117647058815,
+   "max": 0.996078431372549,
+   "n_points": 16
+  }
+ }
+}

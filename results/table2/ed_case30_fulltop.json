@@ -1,0 +1,56 @@
+{
+  "model": "ed",
+  "checkpoint": null,
+  "grid": "case30",
+  "variant": "fulltop",
+  "n_eval": 750,
+  "n_scored": 750,
+  "n_nonconverged": 0,
+  "cost_mape_pct": 7.323639409757569,
+  "cost_mape_pct_median": 6.9930328766000525,
+  "cost_rel_signed_pct": 7.323639409757569,
+  "vm_mae": 0.035915618791596736,
+  "v_mape_pct": 3.5048056071844385,
+  "va_mae_deg": 1.397713156050254,
+  "pg_mae": 0.05012142359867905,
+  "qg_mae": 0.2643066574383855,
+  "violations": {
+    "voltage_box": {
+      "per_scenario_mean_count": 0.0,
+      "scenarios_with_any": 0,
+      "worst_pu": 0.0
+    },
+    "derived_Q": {
+      "per_scenario_mean_count": 3.0,
+      "scenarios_with_any": 750,
+      "worst_pu": 0.5577979593266799
+    },
+    "derived_P": {
+      "per_scenario_mean_count": 0.0,
+      "scenarios_with_any": 0,
+      "worst_pu": 7.216449660063518e-15,
+      "per_scenario_mean_count_slack": 0.0
+    },
+    "thermal": {
+      "per_scenario_mean_count": 0.3,
+      "scenarios_with_any": 225,
+      "worst_loading": 1.0636612797981504
+    },
+    "violated_inequalities_per_scenario": 3.3,
+    "tolerance_pu": 1e-06
+  },
+  "provenance": {
+    "case": "pglib_opf_case30_ieee",
+    "alias": "case30",
+    "variant": "fulltop",
+    "split": "test",
+    "n": 750,
+    "split_range": [
+      14250,
+      15000
+    ],
+    "example_index_min": 14250,
+    "example_index_max": 14999,
+    "n_cost_feats": 12
+  }
+}

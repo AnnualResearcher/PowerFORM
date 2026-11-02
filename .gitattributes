@@ -1,0 +1,3 @@
+# Store every file byte for byte: the run records are listed with their
+# SHA-256 (results/SHA256SUMS), so no line-ending conversion may touch them.
+* -text

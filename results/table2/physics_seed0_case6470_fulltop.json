@@ -1,0 +1,9 @@
+{
+  "model": "physics",
+  "checkpoint": "opf_generalist_physics_seed0.pt",
+  "grid": "case6470",
+  "variant": "fulltop",
+  "n_eval": 750,
+  "n_scored": 0,
+  "n_nonconverged": 750
+}

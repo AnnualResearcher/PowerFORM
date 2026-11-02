@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "PowerFORM: A General-Purpose Foundation Model for Power Systems"
+authors:
+  - family-names: Jo
+    given-names: Seungchan
+    affiliation: Seoul National University
+  - family-names: Lee
+    given-names: Gyu-Sub
+    affiliation: Seoul National University
+license: MIT
+repository-code: "https://github.com/AnnualResearcher/PowerFORM"
+preferred-citation:
+  type: conference-paper
+  title: "PowerFORM: A General-Purpose Foundation Model for Power Systems"
+  authors:
+    - family-names: Jo
+      given-names: Seungchan
+    - family-names: Lee
+      given-names: Gyu-Sub
+  collection-title: "NeurIPS 2026 Workshop on AI Foundations for Power Grids"
+  year: 2026

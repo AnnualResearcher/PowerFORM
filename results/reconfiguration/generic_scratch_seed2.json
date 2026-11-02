@@ -1,0 +1,794 @@
+{
+ "maps": "generic",
+ "arm": "scratch",
+ "seed": 2,
+ "grid": "case57",
+ "steps": 20000,
+ "k_open": 3,
+ "n_train": 2000,
+ "n_val": 157,
+ "n_scored": 85,
+ "batch": 8,
+ "T": 8,
+ "gumbel_tau": 2.0,
+ "margin": 0.075,
+ "lr": 0.0003,
+ "trunk_lr_mult": 0.1,
+ "z_track": 32,
+ "generic_hidden": 450,
+ "init": null,
+ "params": 14832985,
+ "resumed_from_step": null,
+ "elapsed_s": 24190.75461244583,
+ "controls": {
+  "all_closed_gap_pct": 0.1519817629597781,
+  "random_k_gap_pct": 8.22483066785351
+ },
+ "rows": [
+  {
+   "step": 50,
+   "metric": "gap_pct",
+   "value": 0.9808344369129194
+  },
+  {
+   "step": 50,
+   "metric": "gap_pct_median",
+   "value": 0.3388037115339381
+  },
+  {
+   "step": 50,
+   "metric": "infeasible_fraction",
+   "value": 0.9647058823529412
+  },
+  {
+   "step": 100,
+   "metric": "gap_pct",
+   "value": 0.5305729194505379
+  },
+  {
+   "step": 100,
+   "metric": "gap_pct_median",
+   "value": 0.33982797411759796
+  },
+  {
+   "step": 100,
+   "metric": "infeasible_fraction",
+   "value": 0.8705882352941177
+  },
+  {
+   "step": 150,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 150,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 150,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 200,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 200,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 200,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 250,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 250,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 250,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 300,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 300,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 300,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 350,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 350,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 350,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 400,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 400,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 400,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 450,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 450,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 450,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 500,
+   "metric": "gap_pct",
+   "value": 0.754213031559971
+  },
+  {
+   "step": 500,
+   "metric": "gap_pct_median",
+   "value": 0.33717148310139083
+  },
+  {
+   "step": 500,
+   "metric": "infeasible_fraction",
+   "value": 0.9764705882352941
+  },
+  {
+   "step": 550,
+   "metric": "gap_pct",
+   "value": 3.024006992625447
+  },
+  {
+   "step": 550,
+   "metric": "gap_pct_median",
+   "value": 1.161156300160514
+  },
+  {
+   "step": 550,
+   "metric": "infeasible_fraction",
+   "value": 0.5882352941176471
+  },
+  {
+   "step": 600,
+   "metric": "gap_pct",
+   "value": 2.9283050907223673
+  },
+  {
+   "step": 600,
+   "metric": "gap_pct_median",
+   "value": 1.1877930671528685
+  },
+  {
+   "step": 600,
+   "metric": "infeasible_fraction",
+   "value": 0.5882352941176471
+  },
+  {
+   "step": 650,
+   "metric": "gap_pct",
+   "value": 6.908294664489467
+  },
+  {
+   "step": 650,
+   "metric": "gap_pct_median",
+   "value": 0.4076621421678607
+  },
+  {
+   "step": 650,
+   "metric": "infeasible_fraction",
+   "value": 0.8
+  },
+  {
+   "step": 700,
+   "metric": "gap_pct",
+   "value": 0.30491142915053215
+  },
+  {
+   "step": 700,
+   "metric": "gap_pct_median",
+   "value": 0.33717148310139083
+  },
+  {
+   "step": 700,
+   "metric": "infeasible_fraction",
+   "value": 0.9764705882352941
+  },
+  {
+   "step": 750,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 750,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 750,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 800,
+   "metric": "gap_pct",
+   "value": 0.3594374182617764
+  },
+  {
+   "step": 800,
+   "metric": "gap_pct_median",
+   "value": 0.3388037115339381
+  },
+  {
+   "step": 800,
+   "metric": "infeasible_fraction",
+   "value": 0.8588235294117647
+  },
+  {
+   "step": 850,
+   "metric": "gap_pct",
+   "value": 12.249209305913519
+  },
+  {
+   "step": 850,
+   "metric": "gap_pct_median",
+   "value": 1.060344429244838
+  },
+  {
+   "step": 850,
+   "metric": "infeasible_fraction",
+   "value": 0.6588235294117647
+  },
+  {
+   "step": 900,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 900,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 900,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 950,
+   "metric": "gap_pct",
+   "value": 0.0816089060630228
+  },
+  {
+   "step": 950,
+   "metric": "gap_pct_median",
+   "value": 0.3071823975530658
+  },
+  {
+   "step": 950,
+   "metric": "infeasible_fraction",
+   "value": 0.8352941176470589
+  },
+  {
+   "step": 1000,
+   "metric": "gap_pct",
+   "value": 0.590161158461105
+  },
+  {
+   "step": 1000,
+   "metric": "gap_pct_median",
+   "value": 0.33717148310139083
+  },
+  {
+   "step": 1000,
+   "metric": "infeasible_fraction",
+   "value": 0.9411764705882353
+  },
+  {
+   "step": 1250,
+   "metric": "gap_pct",
+   "value": 0.2721627184622361
+  },
+  {
+   "step": 1250,
+   "metric": "gap_pct_median",
+   "value": 0.3303239362021727
+  },
+  {
+   "step": 1250,
+   "metric": "infeasible_fraction",
+   "value": 0.6588235294117647
+  },
+  {
+   "step": 1500,
+   "metric": "gap_pct",
+   "value": 3.9812598772608903
+  },
+  {
+   "step": 1500,
+   "metric": "gap_pct_median",
+   "value": 0.43451171016185314
+  },
+  {
+   "step": 1500,
+   "metric": "infeasible_fraction",
+   "value": 0.8235294117647058
+  },
+  {
+   "step": 1750,
+   "metric": "gap_pct",
+   "value": 0.4526694740949345
+  },
+  {
+   "step": 1750,
+   "metric": "gap_pct_median",
+   "value": 0.47359254278317625
+  },
+  {
+   "step": 1750,
+   "metric": "infeasible_fraction",
+   "value": 0.6941176470588235
+  },
+  {
+   "step": 2000,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 2000,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 2000,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 2250,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 2250,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 2250,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 2500,
+   "metric": "gap_pct",
+   "value": 6.899168476451078
+  },
+  {
+   "step": 2500,
+   "metric": "gap_pct_median",
+   "value": 0.47359254278317625
+  },
+  {
+   "step": 2500,
+   "metric": "infeasible_fraction",
+   "value": 0.7529411764705882
+  },
+  {
+   "step": 2750,
+   "metric": "gap_pct",
+   "value": 0.198843211961243
+  },
+  {
+   "step": 2750,
+   "metric": "gap_pct_median",
+   "value": 0.36747533005397554
+  },
+  {
+   "step": 2750,
+   "metric": "infeasible_fraction",
+   "value": 0.8705882352941177
+  },
+  {
+   "step": 3000,
+   "metric": "gap_pct",
+   "value": 0.10583687050190609
+  },
+  {
+   "step": 3000,
+   "metric": "gap_pct_median",
+   "value": 0.3071823975530658
+  },
+  {
+   "step": 3000,
+   "metric": "infeasible_fraction",
+   "value": 0.7294117647058823
+  },
+  {
+   "step": 3250,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 3250,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 3250,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 3500,
+   "metric": "gap_pct",
+   "value": 0.15392315346409935
+  },
+  {
+   "step": 3500,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 3500,
+   "metric": "infeasible_fraction",
+   "value": 0.9529411764705882
+  },
+  {
+   "step": 3750,
+   "metric": "gap_pct",
+   "value": 5.6226267350295025
+  },
+  {
+   "step": 3750,
+   "metric": "gap_pct_median",
+   "value": 0.43451171016185314
+  },
+  {
+   "step": 3750,
+   "metric": "infeasible_fraction",
+   "value": 0.7529411764705882
+  },
+  {
+   "step": 4000,
+   "metric": "gap_pct",
+   "value": 0.08943383390137699
+  },
+  {
+   "step": 4000,
+   "metric": "gap_pct_median",
+   "value": 0.30120557679963755
+  },
+  {
+   "step": 4000,
+   "metric": "infeasible_fraction",
+   "value": 0.7411764705882353
+  },
+  {
+   "step": 4250,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 4250,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 4250,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 4500,
+   "metric": "gap_pct",
+   "value": 4.165090360637766
+  },
+  {
+   "step": 4500,
+   "metric": "gap_pct_median",
+   "value": 0.33717148310139083
+  },
+  {
+   "step": 4500,
+   "metric": "infeasible_fraction",
+   "value": 0.8941176470588236
+  },
+  {
+   "step": 4750,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 4750,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 4750,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 5000,
+   "metric": "gap_pct",
+   "value": 0.466263197486294
+  },
+  {
+   "step": 5000,
+   "metric": "gap_pct_median",
+   "value": 0.36376930899424936
+  },
+  {
+   "step": 5000,
+   "metric": "infeasible_fraction",
+   "value": 0.8352941176470589
+  },
+  {
+   "step": 6000,
+   "metric": "gap_pct",
+   "value": 0.3668538362304241
+  },
+  {
+   "step": 6000,
+   "metric": "gap_pct_median",
+   "value": 0.6006806618675877
+  },
+  {
+   "step": 6000,
+   "metric": "infeasible_fraction",
+   "value": 0.6470588235294118
+  },
+  {
+   "step": 7000,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 7000,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 7000,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 8000,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 8000,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 8000,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 9000,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 9000,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 9000,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 10000,
+   "metric": "gap_pct",
+   "value": 0.9195166611384339
+  },
+  {
+   "step": 10000,
+   "metric": "gap_pct_median",
+   "value": 0.3388037115339381
+  },
+  {
+   "step": 10000,
+   "metric": "infeasible_fraction",
+   "value": 0.8941176470588236
+  },
+  {
+   "step": 11000,
+   "metric": "gap_pct",
+   "value": 1.7904425380932674
+  },
+  {
+   "step": 11000,
+   "metric": "gap_pct_median",
+   "value": 0.36747533005397554
+  },
+  {
+   "step": 11000,
+   "metric": "infeasible_fraction",
+   "value": 0.7764705882352941
+  },
+  {
+   "step": 12000,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 12000,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 12000,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 13000,
+   "metric": "gap_pct",
+   "value": 2.6373370786888484
+  },
+  {
+   "step": 13000,
+   "metric": "gap_pct_median",
+   "value": 0.3795330373556364
+  },
+  {
+   "step": 13000,
+   "metric": "infeasible_fraction",
+   "value": 0.6470588235294118
+  },
+  {
+   "step": 14000,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 14000,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 14000,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 15000,
+   "metric": "gap_pct",
+   "value": -0.2325880774149187
+  },
+  {
+   "step": 15000,
+   "metric": "gap_pct_median",
+   "value": 0.17073555603292614
+  },
+  {
+   "step": 15000,
+   "metric": "infeasible_fraction",
+   "value": 0.4235294117647059
+  },
+  {
+   "step": 16000,
+   "metric": "gap_pct",
+   "value": -0.5889917141875901
+  },
+  {
+   "step": 16000,
+   "metric": "gap_pct_median",
+   "value": -0.4516597659629331
+  },
+  {
+   "step": 16000,
+   "metric": "infeasible_fraction",
+   "value": 0.27058823529411763
+  },
+  {
+   "step": 17000,
+   "metric": "gap_pct",
+   "value": -0.5139328143884673
+  },
+  {
+   "step": 17000,
+   "metric": "gap_pct_median",
+   "value": -0.39309069853431
+  },
+  {
+   "step": 17000,
+   "metric": "infeasible_fraction",
+   "value": 0.32941176470588235
+  },
+  {
+   "step": 18000,
+   "metric": "gap_pct",
+   "value": -0.01738989509171178
+  },
+  {
+   "step": 18000,
+   "metric": "gap_pct_median",
+   "value": 0.300878927539912
+  },
+  {
+   "step": 18000,
+   "metric": "infeasible_fraction",
+   "value": 0.8352941176470589
+  },
+  {
+   "step": 19000,
+   "metric": "gap_pct",
+   "value": 0.08637165207813731
+  },
+  {
+   "step": 19000,
+   "metric": "gap_pct_median",
+   "value": 0.30120557679963755
+  },
+  {
+   "step": 19000,
+   "metric": "infeasible_fraction",
+   "value": 0.9058823529411765
+  },
+  {
+   "step": 20000,
+   "metric": "gap_pct",
+   "value": -0.1818493593196852
+  },
+  {
+   "step": 20000,
+   "metric": "gap_pct_median",
+   "value": 0.06660559760720837
+  },
+  {
+   "step": 20000,
+   "metric": "infeasible_fraction",
+   "value": 0.4117647058823529
+  }
+ ]
+}

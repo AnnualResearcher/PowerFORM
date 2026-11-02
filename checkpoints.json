@@ -1,0 +1,455 @@
+{
+ "release": "v1.0",
+ "base_url": "https://github.com/AnnualResearcher/PowerFORM/releases/download/v1.0/",
+ "dest": "checkpoints",
+ "files": [
+  {
+   "group": "table1",
+   "name": "case500_generic_final_layer_only_seed0.pt",
+   "asset": "case500_generic_final_layer_only_seed0.pt",
+   "size": 115692875,
+   "sha256": "88257fa6daaee40c1adfc0ac3d070ac31936808e41811741828bbfb98a0f8781"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_final_layer_only_seed1.pt",
+   "asset": "case500_generic_final_layer_only_seed1.pt",
+   "size": 115692875,
+   "sha256": "5d79d1d00e21dc63db65a134135f7a8f3e0de3ba2c9f6f195c763c22e9be3c44"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_final_layer_only_seed2.pt",
+   "asset": "case500_generic_final_layer_only_seed2.pt",
+   "size": 115692875,
+   "sha256": "f1a7c3d3e0f45af6dcbb17095e4037a3cf66a46db594ea6259e9365f99465135"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_merged_readout_seed0.pt",
+   "asset": "case500_generic_merged_readout_seed0.pt",
+   "size": 115638127,
+   "sha256": "bf47cbc68410902f570472fe8505cd9f6fcc5ccd4e8c5fe5f243e34e489e77d4"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_merged_readout_seed1.pt",
+   "asset": "case500_generic_merged_readout_seed1.pt",
+   "size": 115638127,
+   "sha256": "cc6687691351f9d7dbdcb28acdfc8a502a67223fc8fc0d481c787ae3d1006c61"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_merged_readout_seed2.pt",
+   "asset": "case500_generic_merged_readout_seed2.pt",
+   "size": 115638127,
+   "sha256": "848a2160a02346c61ffd034751b25e2aba348c9852334aebd99702351e94040a"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_no_type_masking_seed0.pt",
+   "asset": "case500_generic_no_type_masking_seed0.pt",
+   "size": 115692605,
+   "sha256": "711a91bc37989691465423dece3a2910434a75d61d021ade401fbff22accccde"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_no_type_masking_seed1.pt",
+   "asset": "case500_generic_no_type_masking_seed1.pt",
+   "size": 115692605,
+   "sha256": "a4c002b5459ec9b9202fc9e6972b16bd751c897e40c48a6d2b0dafd4fd883d8e"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_no_type_masking_seed2.pt",
+   "asset": "case500_generic_no_type_masking_seed2.pt",
+   "size": 115692605,
+   "sha256": "0c44cb03e09880f9f56ff08ade3d71e77fd0fefa32b9dc6a0ba8b81fc9084e89"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_seed0.pt",
+   "asset": "case500_generic_seed0.pt",
+   "size": 115688285,
+   "sha256": "a89101a0ce6a37ce331147b18970968fbc11a52c7ca2f084a0b418586f867e12"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_seed1.pt",
+   "asset": "case500_generic_seed1.pt",
+   "size": 115688285,
+   "sha256": "3933730aabffe5de8ae41eb5bb8eae57c4f2095053c77499f67c11075ea8ee69"
+  },
+  {
+   "group": "table1",
+   "name": "case500_generic_seed2.pt",
+   "asset": "case500_generic_seed2.pt",
+   "size": 115688285,
+   "sha256": "055ce45f9800dddf38f9151c83b359c3958b76d23aa48e8d9bc7ad9fdd7aa630"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gnn_seed0.pt",
+   "asset": "case500_gnn_seed0.pt",
+   "size": 60197563,
+   "sha256": "4623c29540a115ace7da670e6691ca6decc0910295977e1a5a85e93dbad2eb70"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gnn_seed1.pt",
+   "asset": "case500_gnn_seed1.pt",
+   "size": 60197563,
+   "sha256": "673b715e6f887d8ad91222d89bbe15c9c951fbbb14cbd06667d2a66a61551628"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gnn_seed2.pt",
+   "asset": "case500_gnn_seed2.pt",
+   "size": 60197563,
+   "sha256": "31e50c7b1460460b056f402fb2ab061ee7ad7ace7dd2e0394b3e0ccc8270f956"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_decision_seed0.pt",
+   "asset": "case500_graphkit_decision_seed0.pt",
+   "size": 80424001,
+   "sha256": "4cdaf89feca0c2754f34359b12ea2979f037eec83bb4074450f49468dcab8b74"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_decision_seed1.pt",
+   "asset": "case500_graphkit_decision_seed1.pt",
+   "size": 80424001,
+   "sha256": "7435fc2c7e188b4d2244e654b937a3223fbcb49a2ee0ae7a29e45189c81a7594"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_decision_seed2.pt",
+   "asset": "case500_graphkit_decision_seed2.pt",
+   "size": 80424001,
+   "sha256": "ca9c4a03abbbdacd7853f98cef526ec9b7de52e9ce1ff865d4f86873d0d82247"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_normalizer.pt",
+   "asset": "case500_graphkit_normalizer.pt",
+   "size": 2162,
+   "sha256": "3e82f88c6cea8fce1ec48e0a1c4239ad3bdcccfaddbd06787e83412e44efd901"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed0/best_model_state_dict.pt",
+   "asset": "case500_graphkit_state_seed0.best_model_state_dict.pt",
+   "size": 80426579,
+   "sha256": "de01aeae5f573057eef17ed89c530af49aba8b44225b6e0f98ca20529439d374"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed0/case500_goc_gen_predictions.parquet",
+   "asset": "case500_graphkit_state_seed0.case500_goc_gen_predictions.parquet",
+   "size": 643206,
+   "sha256": "c84506da98014bdd4b192a24bb85e761edec65ecce959266aaa27e8d5ea2f658"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed0/case500_goc_predictions.parquet",
+   "asset": "case500_graphkit_state_seed0.case500_goc_predictions.parquet",
+   "size": 13015994,
+   "sha256": "c34d490388bf676689e598b32acd11d5ffd57e797b2f1e6011ec068ab989a891"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed1/best_model_state_dict.pt",
+   "asset": "case500_graphkit_state_seed1.best_model_state_dict.pt",
+   "size": 80426579,
+   "sha256": "e6b459718cd36417db7bf08f3c8737b89b91fcbc509ba5d3ca9bfde336454e6a"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed1/case500_goc_gen_predictions.parquet",
+   "asset": "case500_graphkit_state_seed1.case500_goc_gen_predictions.parquet",
+   "size": 671549,
+   "sha256": "488eb0b8cec1785633898b9d5a60bb2b8097b05875206114d6a3b298d5fd4c3c"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed1/case500_goc_predictions.parquet",
+   "asset": "case500_graphkit_state_seed1.case500_goc_predictions.parquet",
+   "size": 13042085,
+   "sha256": "918b00c2b816b4fa97744dc8da1b5f88722eab2a2a134f4ebf57e2b3337f24c9"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed2/best_model_state_dict.pt",
+   "asset": "case500_graphkit_state_seed2.best_model_state_dict.pt",
+   "size": 80426579,
+   "sha256": "6bfab8dbe9937b3b437df1e93273fb376d9b610023eaf4f750850875af1aa643"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed2/case500_goc_gen_predictions.parquet",
+   "asset": "case500_graphkit_state_seed2.case500_goc_gen_predictions.parquet",
+   "size": 669718,
+   "sha256": "dfc56091621fd9cdd22c49d637cdad1ad58207cd69629cd5af1b07d3c1089503"
+  },
+  {
+   "group": "table1",
+   "name": "case500_graphkit_state_seed2/case500_goc_predictions.parquet",
+   "asset": "case500_graphkit_state_seed2.case500_goc_predictions.parquet",
+   "size": 13056119,
+   "sha256": "a4d5484596f7fdb91a3f37832c248c683fca78fa19e60a5a195f8904cb2557bc"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gridsfm_decision_seed0.pt",
+   "asset": "case500_gridsfm_decision_seed0.pt",
+   "size": 60825284,
+   "sha256": "4f48eb7bad7ab172739736ff3b20b0a17e3e8f5187fc47786aeb99a40e9b25c6"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gridsfm_decision_seed1.pt",
+   "asset": "case500_gridsfm_decision_seed1.pt",
+   "size": 60825284,
+   "sha256": "eaa29a6a53c73b36f26c2dd94a976cfdddc381ad67fc0579ea2b47b9944f72a4"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gridsfm_decision_seed2.pt",
+   "asset": "case500_gridsfm_decision_seed2.pt",
+   "size": 60825284,
+   "sha256": "311a23023ad770d5abfa169ef0680ddd7c1efbdcbe55806fecb86873acee707f"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gridsfm_state_seed0.pt",
+   "asset": "case500_gridsfm_state_seed0.pt",
+   "size": 61003215,
+   "sha256": "d9e0981b3fb311b793fc5b19f14165259a968aef3bc92016961f0dd0cca2a9f6"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gridsfm_state_seed1.pt",
+   "asset": "case500_gridsfm_state_seed1.pt",
+   "size": 61003215,
+   "sha256": "22a1e2f578e94c95e6b722c2683fc9477fad5daa34ba19d341e1854c4aac1802"
+  },
+  {
+   "group": "table1",
+   "name": "case500_gridsfm_state_seed2.pt",
+   "asset": "case500_gridsfm_state_seed2.pt",
+   "size": 61003215,
+   "sha256": "a32ec79c9e54ff9be2d58c5602101b917e6c0dc23646c92b0d13328004940d1c"
+  },
+  {
+   "group": "table1",
+   "name": "case500_mlp_seed0.pt",
+   "asset": "case500_mlp_seed0.pt",
+   "size": 60277997,
+   "sha256": "67e8ed87256a28dacdbe75c2cfd5e276f697aea23a993b998870dd5a37905dd5"
+  },
+  {
+   "group": "table1",
+   "name": "case500_mlp_seed1.pt",
+   "asset": "case500_mlp_seed1.pt",
+   "size": 60277997,
+   "sha256": "d380b3678f87d2e41c9f145a5a711d62ec01aeac26b1ce22dc277895c3d9ebef"
+  },
+  {
+   "group": "table1",
+   "name": "case500_mlp_seed2.pt",
+   "asset": "case500_mlp_seed2.pt",
+   "size": 60277997,
+   "sha256": "c8b6da476b57bfbe407df28628943dd41777b616fe18f3e20e09bfd0e48fd4f4"
+  },
+  {
+   "group": "table1",
+   "name": "case500_physics_seed0.pt",
+   "asset": "case500_physics_seed0.pt",
+   "size": 115802885,
+   "sha256": "4d088269e6251a4f05a2c0d26d6082299b5ab0b35ae89edcb085202ab858124b"
+  },
+  {
+   "group": "table1",
+   "name": "case500_physics_seed1.pt",
+   "asset": "case500_physics_seed1.pt",
+   "size": 115802885,
+   "sha256": "99926a771246750ca861ab04eff5bf6e46bbe9e621a99c6e643e4e7da335ae2c"
+  },
+  {
+   "group": "table1",
+   "name": "case500_physics_seed2.pt",
+   "asset": "case500_physics_seed2.pt",
+   "size": 115802885,
+   "sha256": "d2459c098e34012c73c94f2c45db0d480f359d849a65184d6a6abeb6dc051787"
+  },
+  {
+   "group": "fig1",
+   "name": "opf_generalist_generic_ed_seed0.pt",
+   "asset": "opf_generalist_generic_ed_seed0.pt",
+   "size": 116093197,
+   "sha256": "564958551a0e9cdb70e3c13acc5f18f08160dc2b77809ee5de0b789cdb92e203"
+  },
+  {
+   "group": "fig1",
+   "name": "opf_generalist_generic_ed_seed1.pt",
+   "asset": "opf_generalist_generic_ed_seed1.pt",
+   "size": 116093197,
+   "sha256": "16058e3f620eb391c435f4d297248fe98d2a5c64a8ca2dde260d9146bd65d32c"
+  },
+  {
+   "group": "fig1",
+   "name": "opf_generalist_generic_ed_seed2.pt",
+   "asset": "opf_generalist_generic_ed_seed2.pt",
+   "size": 116093197,
+   "sha256": "9955515f335f57cb689278bd17da70e5644f922e43f10e339b6f86478bed784d"
+  },
+  {
+   "group": "table2",
+   "name": "opf_generalist_generic_seed0.pt",
+   "asset": "opf_generalist_generic_seed0.pt",
+   "size": 116088919,
+   "sha256": "fbab67c7618ea5512c26e06cb76704dee18ebb0b572089f43c62f272a8a6e2f7"
+  },
+  {
+   "group": "table2",
+   "name": "opf_generalist_generic_seed1.pt",
+   "asset": "opf_generalist_generic_seed1.pt",
+   "size": 116088919,
+   "sha256": "5b8105c4e13911961829e84a6d57e295a00f9355b50313d72f8a281e6c8eb14d"
+  },
+  {
+   "group": "table2",
+   "name": "opf_generalist_generic_seed2.pt",
+   "asset": "opf_generalist_generic_seed2.pt",
+   "size": 116088919,
+   "sha256": "adf42bada52c6cd2c3b7b9a9986b1c32fb48a8ba9b603069bc664f438479af0d"
+  },
+  {
+   "group": "fig1",
+   "name": "opf_generalist_physics_ed_seed0.pt",
+   "asset": "opf_generalist_physics_ed_seed0.pt",
+   "size": 116210597,
+   "sha256": "c4ed8f9102dbe62e5c61eb39822be8828e1044eacd2fbd65b2d88e7901d7c6c0"
+  },
+  {
+   "group": "fig1",
+   "name": "opf_generalist_physics_ed_seed1.pt",
+   "asset": "opf_generalist_physics_ed_seed1.pt",
+   "size": 116210597,
+   "sha256": "52b555366ee274a319fc8bc886a4d3f7d7bcbedbd4a2642e3b95e7070d9e7357"
+  },
+  {
+   "group": "fig1",
+   "name": "opf_generalist_physics_ed_seed2.pt",
+   "asset": "opf_generalist_physics_ed_seed2.pt",
+   "size": 116210597,
+   "sha256": "f8bd5d92037f094674684cd4c024d14f1b31a98808422a01f4e789c300a0f705"
+  },
+  {
+   "group": "table2",
+   "name": "opf_generalist_physics_seed0.pt",
+   "asset": "opf_generalist_physics_seed0.pt",
+   "size": 116205479,
+   "sha256": "4326a3eacc169507daf67524b1dda22f138cc9fa7a5024d3c7668740173e1c90"
+  },
+  {
+   "group": "table2",
+   "name": "opf_generalist_physics_seed1.pt",
+   "asset": "opf_generalist_physics_seed1.pt",
+   "size": 116205479,
+   "sha256": "43ee789bcab061147f5dc93c5c530dd65e448f76282d367f0f6ff6d38a6e5f04"
+  },
+  {
+   "group": "table2",
+   "name": "opf_generalist_physics_seed2.pt",
+   "asset": "opf_generalist_physics_seed2.pt",
+   "size": 116205479,
+   "sha256": "b5e0e44889ce946679f5b3283e840c390b9966ae8298132937e72d3f20da9351"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_pretrained_seed0.pt",
+   "asset": "reconfig_physics_pretrained_seed0.pt",
+   "size": 59525471,
+   "sha256": "2ed80cb75f63d5963007cd725540a1e6d59ce69556bb7a3455b54b94bb8eed8b"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_pretrained_seed1.pt",
+   "asset": "reconfig_physics_pretrained_seed1.pt",
+   "size": 59525471,
+   "sha256": "38566f2bf246ffaaab2585336ee07be590a8c9bc9e3e293f5942029dcc65fd35"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_pretrained_seed2.pt",
+   "asset": "reconfig_physics_pretrained_seed2.pt",
+   "size": 59525471,
+   "sha256": "79ff43028c9e9faf40ce3c88a58e1abc07ea43cdeb1681904ccd848e53d1a808"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_pretrained_seed3.pt",
+   "asset": "reconfig_physics_pretrained_seed3.pt",
+   "size": 59525471,
+   "sha256": "2ba51a21e8c0fe46271379d3f7b80f153bb08b4aca06342865ad4db8d11e4408"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_pretrained_seed4.pt",
+   "asset": "reconfig_physics_pretrained_seed4.pt",
+   "size": 59525471,
+   "sha256": "8edc45b77a9f7fc204b9c00872c83eb17d1ec9414c947c051cf45cc8585b4bd2"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_pretrained_seed5.pt",
+   "asset": "reconfig_physics_pretrained_seed5.pt",
+   "size": 59525471,
+   "sha256": "2c219e6ae6875dbcafeb51b586c8f03fe63c853ea8cc334fab69c206305289ef"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_scratch_seed0.pt",
+   "asset": "reconfig_physics_scratch_seed0.pt",
+   "size": 59523755,
+   "sha256": "42c3aff5b7f139aa25443a5ee3d3ae39696850989a18eaec87ad439231481aef"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_scratch_seed1.pt",
+   "asset": "reconfig_physics_scratch_seed1.pt",
+   "size": 59523755,
+   "sha256": "481aa5ae94f7cac03ea4ce3f930233bac200d4c18a4437f96ad7de0736cc51f9"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_scratch_seed2.pt",
+   "asset": "reconfig_physics_scratch_seed2.pt",
+   "size": 59523755,
+   "sha256": "145fd3ad435f5e1ac763b0e97bdf152bfd5972e3df6178b0d701f3dab5db33f8"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_scratch_seed3.pt",
+   "asset": "reconfig_physics_scratch_seed3.pt",
+   "size": 59523755,
+   "sha256": "a18bb93dd1382f2f8e8415f4346e857222db6586f9185efb7d4bf9fdad4642c8"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_scratch_seed4.pt",
+   "asset": "reconfig_physics_scratch_seed4.pt",
+   "size": 59523755,
+   "sha256": "59c443692637c5c18cf4dcd162ed6877b85d579085cd5249574d7cb6d89bd0df"
+  },
+  {
+   "group": "reconfig",
+   "name": "reconfig_physics_scratch_seed5.pt",
+   "asset": "reconfig_physics_scratch_seed5.pt",
+   "size": 59523755,
+   "sha256": "1dd618e8325577bda86fe9cd30f9f737aa5a55fce818f74f0067aefe5c4e034e"
+  }
+ ]
+}

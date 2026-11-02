@@ -1,0 +1,9 @@
+{
+  "model": "gridsfm",
+  "checkpoint": null,
+  "grid": "case6470",
+  "variant": "fulltop",
+  "n_eval": 750,
+  "n_scored": 0,
+  "n_nonconverged": 750
+}

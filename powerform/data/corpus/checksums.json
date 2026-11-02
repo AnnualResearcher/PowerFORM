@@ -1,0 +1,213 @@
+{
+ "_about": "Expected content of every dataset the paper uses. Shards (opfdata_hf/...): line count, decompressed byte count and SHA-256 of the decompressed lines (the gzip container carries a timestamp and differs on every fetch; the lines do not). Per-file test splits (opfdata_<alias>/<variant>) and converted datakit splits (case500_datakit/*_opfdata): SHA-256 over '<file name> <sha256 of its content>' lines in index order. gz_bytes_local is a compressed size, for disk planning only. The datakit raw entry records the run's counts and a digest of its sampled load profile. Checked by fetch_opfdata.py, fetch_test_split.py and datakit_export.py with --verify-only --deep.",
+ "case500_datakit/case500_30k/case500_goc/raw": {
+  "load_profile_rows": 15000000,
+  "load_profile_sha256": "60ea614bb0d718e8b174ca3752bb1160b8e27b2e71651a8301c310116b210ef0",
+  "n_generated": 30000,
+  "n_scenarios_txt": 29987,
+  "n_solved": 29987,
+  "unsolved_ids": [
+   16496,
+   16498,
+   16499,
+   16500,
+   16501,
+   16502,
+   16503,
+   16504,
+   16505,
+   16506,
+   16507,
+   16509,
+   16582
+  ]
+ },
+ "case500_datakit/holdout_opfdata": {
+  "bytes": 124326199,
+  "files": 500,
+  "first": 29500,
+  "last": 29999,
+  "sha256": "020a8e3aa54d85458f41d0bc3736d825bcb06f414cf8518c3b29f4abe299d2f9"
+ },
+ "case500_datakit/train_opfdata": {
+  "bytes": 7336982545,
+  "files": 29487,
+  "first": 0,
+  "last": 29499,
+  "sha256": "0686a28d4d180550935db4eba6c7ee50bffd4ee7cd28ff607df6cc85a51f721a"
+ },
+ "opfdata_case2000/fulltop": {
+  "bytes": 2567381661,
+  "files": 750,
+  "gz_bytes_local": 233112999,
+  "sha256": "b93ca531babbea01f6aea610e1c4a13721a89172baad78dfe15d8834e5284d6c"
+ },
+ "opfdata_case2000/n1": {
+  "bytes": 2566914359,
+  "files": 750,
+  "gz_bytes_local": 233080234,
+  "sha256": "4ab3ccc193db4a1f86ada9eec224e383d169aa8e0c25d5ffdd45de656e7e4faf"
+ },
+ "opfdata_case6470/fulltop": {
+  "bytes": 6715026174,
+  "files": 750,
+  "gz_bytes_local": 672462205,
+  "sha256": "5c8dc5e769b3c3550f99575c6831e537d1a35cdb7aef481f8dde6a8880ab0936"
+ },
+ "opfdata_case6470/n1": {
+  "bytes": 6714579526,
+  "files": 750,
+  "gz_bytes_local": 672435435,
+  "sha256": "b3c96e9055b67f8c4aa98d27fa6b58d182a64478ac2044f17229cbd4b1fce6ea"
+ },
+ "opfdata_hf/pglib_opf_case118_ieee/fulltop/test": {
+  "bytes": 38428991,
+  "gz_bytes_local": 11765198,
+  "lines": 750,
+  "sha256": "38a9b9625386e50a49ed4ffc77bb019209ce9108a48fdecad7afd23f8113969f"
+ },
+ "opfdata_hf/pglib_opf_case118_ieee/fulltop/train": {
+  "bytes": 691717195,
+  "gz_bytes_local": 211747384,
+  "lines": 13500,
+  "sha256": "b2eea575be47b58a31e6cdb07f635914db5b408f4acfd709b11b0d240969d1e4"
+ },
+ "opfdata_hf/pglib_opf_case118_ieee/fulltop/val": {
+  "bytes": 38428917,
+  "gz_bytes_local": 11764576,
+  "lines": 750,
+  "sha256": "9dd0d78864b8cceded5b65810500ef194e804b2dbe1e52e83b17811e71400493"
+ },
+ "opfdata_hf/pglib_opf_case118_ieee/n1/test": {
+  "bytes": 38324500,
+  "gz_bytes_local": 11740072,
+  "lines": 750,
+  "sha256": "e616db0b478a526d36af611998c209826e5d5432f0cb81589dae279ab717c6de"
+ },
+ "opfdata_hf/pglib_opf_case118_ieee/n1/train": {
+  "bytes": 689816848,
+  "gz_bytes_local": 211289703,
+  "lines": 13500,
+  "sha256": "c2790430ffff9e689ab479c45646a375b20d1ca80750c14515f589dfad70deda"
+ },
+ "opfdata_hf/pglib_opf_case118_ieee/n1/val": {
+  "bytes": 38321571,
+  "gz_bytes_local": 11737998,
+  "lines": 750,
+  "sha256": "f7a1907dea6ba72471b5f2b4e7995ff5ebbb393706336177295dc7c99b936743"
+ },
+ "opfdata_hf/pglib_opf_case30_ieee/fulltop/test": {
+  "bytes": 8307263,
+  "gz_bytes_local": 2022689,
+  "lines": 750,
+  "sha256": "1cd81ab91557892e60b43735e7bd2155aea464838c8da82241afa049fda6b5bd"
+ },
+ "opfdata_hf/pglib_opf_case30_ieee/fulltop/train": {
+  "bytes": 149526552,
+  "gz_bytes_local": 36384839,
+  "lines": 13500,
+  "sha256": "e6cbb8b9aa243e6c1d2b31b270723b47cb2e3613f221a25ffe3bf03aae3f6c81"
+ },
+ "opfdata_hf/pglib_opf_case30_ieee/fulltop/val": {
+  "bytes": 8307309,
+  "gz_bytes_local": 2022505,
+  "lines": 750,
+  "sha256": "86c2c35a4ac4908360789f3d3e8b53f9fa27251d29711eb940a037ae45c7c9be"
+ },
+ "opfdata_hf/pglib_opf_case30_ieee/n1/test": {
+  "bytes": 8211182,
+  "gz_bytes_local": 2010581,
+  "lines": 750,
+  "sha256": "48aa0bd4c42258078dec7c20072333cbddfed6d38b834cc761d5b77fd75d9833"
+ },
+ "opfdata_hf/pglib_opf_case30_ieee/n1/train": {
+  "bytes": 147763702,
+  "gz_bytes_local": 36137141,
+  "lines": 13500,
+  "sha256": "b3989001f409582ff9d657d60b7ad20172f3a850d0f4b75b73b79a2908c80617"
+ },
+ "opfdata_hf/pglib_opf_case30_ieee/n1/val": {
+  "bytes": 8208551,
+  "gz_bytes_local": 2009114,
+  "lines": 750,
+  "sha256": "718d09bc5166a11ebc623c1e46bd5a04f51da0b01a5dfc5c5550a46bdbf8bd8e"
+ },
+ "opfdata_hf/pglib_opf_case500_goc/fulltop/test": {
+  "bytes": 165608838,
+  "gz_bytes_local": 48748866,
+  "lines": 750,
+  "sha256": "b91b0e837082ea2c12efcf5d564c0be667cf4334de80fb9fbefa5a29a1bf05ac"
+ },
+ "opfdata_hf/pglib_opf_case500_goc/fulltop/train": {
+  "bytes": 2980919487,
+  "gz_bytes_local": 877474430,
+  "lines": 13500,
+  "sha256": "18cc57d52017b27b96aa5c475ec1161e309cf5c0b55cccbb20c328471d521cdc"
+ },
+ "opfdata_hf/pglib_opf_case500_goc/fulltop/val": {
+  "bytes": 165606138,
+  "gz_bytes_local": 48750738,
+  "lines": 750,
+  "sha256": "3b24021ecc5401a51c28723add5515072b239960307fd0ec38e12c37b07a6048"
+ },
+ "opfdata_hf/pglib_opf_case500_goc/n1/test": {
+  "bytes": 165468852,
+  "gz_bytes_local": 48715171,
+  "lines": 750,
+  "sha256": "af9d5f45d4fad28b44c49732f0c06cdc0bf0e4a36600a8b2e7a7c9e87c6a34c8"
+ },
+ "opfdata_hf/pglib_opf_case500_goc/n1/train": {
+  "bytes": 2978434662,
+  "gz_bytes_local": 876827806,
+  "lines": 13500,
+  "sha256": "d8fb9201490484716a8a98353f86e8a3c670aade01f43611c467d9ab8e7b2682"
+ },
+ "opfdata_hf/pglib_opf_case500_goc/n1/val": {
+  "bytes": 165473139,
+  "gz_bytes_local": 48715244,
+  "lines": 750,
+  "sha256": "d65fe97b3fe7e6d8ffd0001d65bc513f0f101f415c76037280cef8a02fd202be"
+ },
+ "opfdata_hf/pglib_opf_case57_ieee/fulltop/test": {
+  "bytes": 15625485,
+  "gz_bytes_local": 3893032,
+  "lines": 750,
+  "sha256": "302b35675f7f783875434eb7f60583de8cd7e55f325f48fb81ceed85c6930ce5"
+ },
+ "opfdata_hf/pglib_opf_case57_ieee/fulltop/train": {
+  "bytes": 281257614,
+  "gz_bytes_local": 70039781,
+  "lines": 13500,
+  "sha256": "49e2fa8fe1014041013571cd435364c7b850c86cb6be0ef18ccfde6d0585d1f3"
+ },
+ "opfdata_hf/pglib_opf_case57_ieee/fulltop/val": {
+  "bytes": 15625306,
+  "gz_bytes_local": 3892839,
+  "lines": 750,
+  "sha256": "9897f42aa4892cbb2a6c5a2c5d3b410d958627c53f75f76429e1162b505931b7"
+ },
+ "opfdata_hf/pglib_opf_case57_ieee/n1/test": {
+  "bytes": 15525216,
+  "gz_bytes_local": 3890153,
+  "lines": 750,
+  "sha256": "749ae3cc9b57f290f6022e8323171a1894a9d903c002af725cca551b9980dfad"
+ },
+ "opfdata_hf/pglib_opf_case57_ieee/n1/train": {
+  "bytes": 279454634,
+  "gz_bytes_local": 69987045,
+  "lines": 13500,
+  "sha256": "385aa50442295f855d9c3addfa5a4a5479ce855b25b2fbeeb013260b003d33c5"
+ },
+ "opfdata_hf/pglib_opf_case57_ieee/n1/val": {
+  "bytes": 15526582,
+  "gz_bytes_local": 3890806,
+  "lines": 750,
+  "sha256": "6e194a9454e194a0e2e4e1874469fb5cc701445fed6a140a0b35891df4f2557b"
+ },
+ "pglib/pglib_opf_case500_goc.m": {
+  "bytes": 212013,
+  "header": "IEEE PES Power Grid Library - Optimal Power Flow - v23.07 (23 July 2023)",
+  "sha256": "36c298d571605019ef16c17dd74680adca1386d91ed47d69a0d909aebc90a1b6",
+  "source": "https://raw.githubusercontent.com/power-grid-lib/pglib-opf/master/pglib_opf_case500_goc.m"
+ }
+}
