@@ -450,6 +450,83 @@
    "asset": "reconfig_physics_scratch_seed5.pt",
    "size": 59523755,
    "sha256": "1dd618e8325577bda86fe9cd30f9f737aa5a55fce818f74f0067aefe5c4e034e"
+  },
+  {
+   "group": "long_run",
+   "name": "case500_physics_steps60000_seed0.pt",
+   "asset": "case500_physics_steps60000_seed0.pt",
+   "size": 115829779,
+   "sha256": "47fea5c24c2fb61a1bd88bfb02e29aec8f5a73973a200d586420eb45bf50156f"
+  },
+  {
+   "group": "long_run",
+   "name": "case500_physics_steps120000_seed0.pt",
+   "asset": "case500_physics_steps120000_seed0.pt",
+   "size": 115829779,
+   "sha256": "a1cd54e9c4490c0c63303d5cac8671bf3423e4580bcbba06e8f7405a0c151eb5"
+  },
+  {
+   "group": "long_run",
+   "name": "case500_gridsfm_decision_steps60000_seed0.pt",
+   "asset": "case500_gridsfm_decision_steps60000_seed0.pt",
+   "size": 60913223,
+   "sha256": "177cab1f82500dad5588c5d4e3c4f41096b80f669e983ca889c0a1f3e12e5e75"
+  },
+  {
+   "group": "long_run",
+   "name": "case500_gridsfm_decision_steps120000_seed0.pt",
+   "asset": "case500_gridsfm_decision_steps120000_seed0.pt",
+   "size": 60913223,
+   "sha256": "877a8f7e43303d24e334ac7b33b5da13d09280e27e0328ac8ea9faf15ab4a7c6"
+  },
+  {
+   "group": "gridsfm_reconfig",
+   "name": "opf_generalist_gridsfm_seed0.pt",
+   "asset": "opf_generalist_gridsfm_seed0.pt",
+   "size": 61363289,
+   "sha256": "86350d2edfecc38f038f630e28b7a360d467afcf800ffa25a08439260916ece0"
+  },
+  {
+   "group": "gridsfm_reconfig",
+   "name": "reconfig_gridsfm_pretrained_seed0.pt",
+   "asset": "reconfig_gridsfm_pretrained_seed0.pt",
+   "size": 61182782,
+   "sha256": "4cd2631ee0452663f3da207bdfb1067896a7a75df9b9bfc001b49d0be5d3971e"
+  },
+  {
+   "group": "gridsfm_reconfig",
+   "name": "reconfig_gridsfm_pretrained_seed1.pt",
+   "asset": "reconfig_gridsfm_pretrained_seed1.pt",
+   "size": 61182782,
+   "sha256": "1564b19ae85021dc8c2d4805c3e42b63b69d36862c42af4075a36ef43cf9f04b"
+  },
+  {
+   "group": "gridsfm_reconfig",
+   "name": "reconfig_gridsfm_pretrained_seed2.pt",
+   "asset": "reconfig_gridsfm_pretrained_seed2.pt",
+   "size": 61182782,
+   "sha256": "4f6b219fab54d9e17b910838fa00f11429f0704cd4619859f53f9132f606be8f"
+  },
+  {
+   "group": "gridsfm_reconfig",
+   "name": "reconfig_gridsfm_scratch_seed0.pt",
+   "asset": "reconfig_gridsfm_scratch_seed0.pt",
+   "size": 61179107,
+   "sha256": "1673667fe5b9ceba669b30839dc6653f5a5b8976f11dd394931f4e81541b0f2a"
+  },
+  {
+   "group": "gridsfm_reconfig",
+   "name": "reconfig_gridsfm_scratch_seed1.pt",
+   "asset": "reconfig_gridsfm_scratch_seed1.pt",
+   "size": 61179107,
+   "sha256": "24d74022676016ce9e7d92e6fdf5407cf169d963e6d4569d99c134412ef7d243"
+  },
+  {
+   "group": "gridsfm_reconfig",
+   "name": "reconfig_gridsfm_scratch_seed2.pt",
+   "asset": "reconfig_gridsfm_scratch_seed2.pt",
+   "size": 61179107,
+   "sha256": "55d988bcda4dc81ee85d1662d40a6e1a83b4ea92006fd1d6a74d93f9603a3e7c"
   }
  ]
 }

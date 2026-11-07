@@ -1,0 +1,793 @@
+{
+ "maps": "gridsfm",
+ "arm": "scratch",
+ "seed": 1,
+ "grid": "case57",
+ "steps": 20000,
+ "k_open": 3,
+ "n_train": 2000,
+ "n_val": 157,
+ "n_scored": 85,
+ "batch": 8,
+ "T": 8,
+ "gumbel_tau": 2.0,
+ "margin": 0.075,
+ "lr": 0.0003,
+ "trunk_lr_mult": 0.1,
+ "z_track": 32,
+ "init": null,
+ "params": 15168543,
+ "resumed_from_step": null,
+ "elapsed_s": 117053.79480648041,
+ "controls": {
+  "all_closed_gap_pct": 0.1519817629597781,
+  "random_k_gap_pct": 8.22483066785351
+ },
+ "rows": [
+  {
+   "step": 50,
+   "metric": "gap_pct",
+   "value": 0.2784630457186211
+  },
+  {
+   "step": 50,
+   "metric": "gap_pct_median",
+   "value": 0.41048105982724475
+  },
+  {
+   "step": 50,
+   "metric": "infeasible_fraction",
+   "value": 0.4
+  },
+  {
+   "step": 100,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 100,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 100,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 150,
+   "metric": "gap_pct",
+   "value": 0.18488741929329666
+  },
+  {
+   "step": 150,
+   "metric": "gap_pct_median",
+   "value": 0.3388037115339381
+  },
+  {
+   "step": 150,
+   "metric": "infeasible_fraction",
+   "value": 0.8941176470588236
+  },
+  {
+   "step": 200,
+   "metric": "gap_pct",
+   "value": 2.443261166186764
+  },
+  {
+   "step": 200,
+   "metric": "gap_pct_median",
+   "value": 0.47359254278317625
+  },
+  {
+   "step": 200,
+   "metric": "infeasible_fraction",
+   "value": 0.6941176470588235
+  },
+  {
+   "step": 250,
+   "metric": "gap_pct",
+   "value": 0.26436362986780615
+  },
+  {
+   "step": 250,
+   "metric": "gap_pct_median",
+   "value": 0.4354092717715725
+  },
+  {
+   "step": 250,
+   "metric": "infeasible_fraction",
+   "value": 0.611764705882353
+  },
+  {
+   "step": 300,
+   "metric": "gap_pct",
+   "value": 0.03983146792323728
+  },
+  {
+   "step": 300,
+   "metric": "gap_pct_median",
+   "value": 0.19633439588852497
+  },
+  {
+   "step": 300,
+   "metric": "infeasible_fraction",
+   "value": 0.5058823529411764
+  },
+  {
+   "step": 350,
+   "metric": "gap_pct",
+   "value": 0.1519817629597781
+  },
+  {
+   "step": 350,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 350,
+   "metric": "infeasible_fraction",
+   "value": 1.0
+  },
+  {
+   "step": 400,
+   "metric": "gap_pct",
+   "value": 3.3926695428608
+  },
+  {
+   "step": 400,
+   "metric": "gap_pct_median",
+   "value": 1.1782274153037084
+  },
+  {
+   "step": 400,
+   "metric": "infeasible_fraction",
+   "value": 0.6470588235294118
+  },
+  {
+   "step": 450,
+   "metric": "gap_pct",
+   "value": 0.26149988014163683
+  },
+  {
+   "step": 450,
+   "metric": "gap_pct_median",
+   "value": 0.36376930899424936
+  },
+  {
+   "step": 450,
+   "metric": "infeasible_fraction",
+   "value": 0.8117647058823529
+  },
+  {
+   "step": 500,
+   "metric": "gap_pct",
+   "value": 0.23390600767890837
+  },
+  {
+   "step": 500,
+   "metric": "gap_pct_median",
+   "value": 0.3474048426152112
+  },
+  {
+   "step": 500,
+   "metric": "infeasible_fraction",
+   "value": 0.8352941176470589
+  },
+  {
+   "step": 550,
+   "metric": "gap_pct",
+   "value": 0.5352508829768989
+  },
+  {
+   "step": 550,
+   "metric": "gap_pct_median",
+   "value": 0.3795330373556364
+  },
+  {
+   "step": 550,
+   "metric": "infeasible_fraction",
+   "value": 0.8117647058823529
+  },
+  {
+   "step": 600,
+   "metric": "gap_pct",
+   "value": 1.0430193890812571
+  },
+  {
+   "step": 600,
+   "metric": "gap_pct_median",
+   "value": 0.33982797411759796
+  },
+  {
+   "step": 600,
+   "metric": "infeasible_fraction",
+   "value": 0.9411764705882353
+  },
+  {
+   "step": 650,
+   "metric": "gap_pct",
+   "value": 0.5849422126765458
+  },
+  {
+   "step": 650,
+   "metric": "gap_pct_median",
+   "value": 0.8056691850692476
+  },
+  {
+   "step": 650,
+   "metric": "infeasible_fraction",
+   "value": 0.4823529411764706
+  },
+  {
+   "step": 700,
+   "metric": "gap_pct",
+   "value": 0.1510010661586815
+  },
+  {
+   "step": 700,
+   "metric": "gap_pct_median",
+   "value": 0.335551054640718
+  },
+  {
+   "step": 700,
+   "metric": "infeasible_fraction",
+   "value": 0.9411764705882353
+  },
+  {
+   "step": 750,
+   "metric": "gap_pct",
+   "value": 0.43055698137513
+  },
+  {
+   "step": 750,
+   "metric": "gap_pct_median",
+   "value": 0.6607023137265523
+  },
+  {
+   "step": 750,
+   "metric": "infeasible_fraction",
+   "value": 0.5529411764705883
+  },
+  {
+   "step": 800,
+   "metric": "gap_pct",
+   "value": 0.2290118732284871
+  },
+  {
+   "step": 800,
+   "metric": "gap_pct_median",
+   "value": 0.4076621421678607
+  },
+  {
+   "step": 800,
+   "metric": "infeasible_fraction",
+   "value": 0.8117647058823529
+  },
+  {
+   "step": 850,
+   "metric": "gap_pct",
+   "value": -0.3302717550741239
+  },
+  {
+   "step": 850,
+   "metric": "gap_pct_median",
+   "value": 0.03638388429439837
+  },
+  {
+   "step": 850,
+   "metric": "infeasible_fraction",
+   "value": 0.4588235294117647
+  },
+  {
+   "step": 900,
+   "metric": "gap_pct",
+   "value": 0.13460297402042626
+  },
+  {
+   "step": 900,
+   "metric": "gap_pct_median",
+   "value": 0.300878927539912
+  },
+  {
+   "step": 900,
+   "metric": "infeasible_fraction",
+   "value": 0.4
+  },
+  {
+   "step": 950,
+   "metric": "gap_pct",
+   "value": 0.6967274241957762
+  },
+  {
+   "step": 950,
+   "metric": "gap_pct_median",
+   "value": 1.1284231573003094
+  },
+  {
+   "step": 950,
+   "metric": "infeasible_fraction",
+   "value": 0.47058823529411764
+  },
+  {
+   "step": 1000,
+   "metric": "gap_pct",
+   "value": 0.1824898292530039
+  },
+  {
+   "step": 1000,
+   "metric": "gap_pct_median",
+   "value": 0.30363139321134386
+  },
+  {
+   "step": 1000,
+   "metric": "infeasible_fraction",
+   "value": 0.4235294117647059
+  },
+  {
+   "step": 1250,
+   "metric": "gap_pct",
+   "value": 0.1233826706548871
+  },
+  {
+   "step": 1250,
+   "metric": "gap_pct_median",
+   "value": 0.300878927539912
+  },
+  {
+   "step": 1250,
+   "metric": "infeasible_fraction",
+   "value": 0.4
+  },
+  {
+   "step": 1500,
+   "metric": "gap_pct",
+   "value": 0.1326393003235696
+  },
+  {
+   "step": 1500,
+   "metric": "gap_pct_median",
+   "value": 0.300878927539912
+  },
+  {
+   "step": 1500,
+   "metric": "infeasible_fraction",
+   "value": 0.36470588235294116
+  },
+  {
+   "step": 1750,
+   "metric": "gap_pct",
+   "value": 0.1454749995848994
+  },
+  {
+   "step": 1750,
+   "metric": "gap_pct_median",
+   "value": 0.3139904916517082
+  },
+  {
+   "step": 1750,
+   "metric": "infeasible_fraction",
+   "value": 0.4588235294117647
+  },
+  {
+   "step": 2000,
+   "metric": "gap_pct",
+   "value": 0.1441532648395261
+  },
+  {
+   "step": 2000,
+   "metric": "gap_pct_median",
+   "value": 0.3139904916517082
+  },
+  {
+   "step": 2000,
+   "metric": "infeasible_fraction",
+   "value": 0.5058823529411764
+  },
+  {
+   "step": 2250,
+   "metric": "gap_pct",
+   "value": 0.16028187491074736
+  },
+  {
+   "step": 2250,
+   "metric": "gap_pct_median",
+   "value": 0.3071823975530658
+  },
+  {
+   "step": 2250,
+   "metric": "infeasible_fraction",
+   "value": 0.38823529411764707
+  },
+  {
+   "step": 2500,
+   "metric": "gap_pct",
+   "value": -0.21901727143342473
+  },
+  {
+   "step": 2500,
+   "metric": "gap_pct_median",
+   "value": -0.1855415560270714
+  },
+  {
+   "step": 2500,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 2750,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 2750,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 2750,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 3000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 3000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 3000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 3250,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 3250,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 3250,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 3500,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 3500,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 3500,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 3750,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 3750,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 3750,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 4000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 4000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 4000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 4250,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 4250,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 4250,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 4500,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 4500,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 4500,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 4750,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 4750,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 4750,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 5000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 5000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 5000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 6000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 6000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 6000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 7000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 7000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 7000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 8000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 8000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 8000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 9000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 9000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 9000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 10000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 10000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 10000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 11000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 11000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 11000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 12000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 12000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 12000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 13000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 13000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 13000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 14000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 14000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 14000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 15000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 15000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 15000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 16000,
+   "metric": "gap_pct",
+   "value": -0.4466586944191892
+  },
+  {
+   "step": 16000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 16000,
+   "metric": "infeasible_fraction",
+   "value": 0.3176470588235294
+  },
+  {
+   "step": 17000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 17000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 17000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 18000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 18000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 18000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 19000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 19000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 19000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  },
+  {
+   "step": 20000,
+   "metric": "gap_pct",
+   "value": -0.45576541645720503
+  },
+  {
+   "step": 20000,
+   "metric": "gap_pct_median",
+   "value": -0.29876978305108143
+  },
+  {
+   "step": 20000,
+   "metric": "infeasible_fraction",
+   "value": 0.3058823529411765
+  }
+ ]
+}

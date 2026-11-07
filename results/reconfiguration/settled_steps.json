@@ -1,0 +1,92 @@
+{
+ "threshold": 0.5,
+ "rows": [
+  {
+   "maps": "physics",
+   "backbone": "PowerFORM",
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "pretrained": {
+    "per_seed": [
+     400,
+     550,
+     350,
+     1250,
+     400,
+     100
+    ],
+    "median": 400
+   },
+   "starting_models": 3,
+   "scratch": {
+    "per_seed": [
+     2000,
+     2000,
+     14000,
+     1750,
+     1500,
+     400
+    ],
+    "median": 1875
+   }
+  },
+  {
+   "maps": "generic",
+   "backbone": "PowerFORM, generic attn.",
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "pretrained": {
+    "per_seed": [
+     950,
+     4500,
+     900
+    ],
+    "median": 950
+   },
+   "starting_models": 3,
+   "scratch": {
+    "per_seed": [
+     19000,
+     18000,
+     20000
+    ],
+    "median": 19000
+   }
+  },
+  {
+   "maps": "gridsfm",
+   "backbone": "GridSFM + attached gate",
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "pretrained": {
+    "per_seed": [
+     16000,
+     20000,
+     19000
+    ],
+    "median": 19000
+   },
+   "starting_models": 1,
+   "scratch": {
+    "per_seed": [
+     8000,
+     2250,
+     1000
+    ],
+    "median": 2250
+   }
+  }
+ ]
+}

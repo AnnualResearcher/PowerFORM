@@ -60,7 +60,7 @@ This downloads them to `checkpoints/` and verifies each SHA-256 against
 
 ```
 python scripts/download_checkpoints.py --list
-python scripts/download_checkpoints.py                  # all, about 5 GB
+python scripts/download_checkpoints.py                  # all, about 6 GB
 python scripts/download_checkpoints.py --group table2   # one group
 ```
 
@@ -70,6 +70,8 @@ python scripts/download_checkpoints.py --group table2   # one group
 | `table2` | Table 2 and the App. D out-of-distribution table |
 | `fig1` | the generalists Figure 1 starts from |
 | `reconfig` | final Figure 1 models with physics maps, read by the App. C infeasible split |
+| `long_run` | App. D longer training (Figure 2): the 60k- and 120k-step runs |
+| `gridsfm_reconfig` | App. D reconfiguration with the GridSFM backbone (Figure 3): its final models and the generalist its pretrained arm starts from |
 
 ## Reproducing the paper
 
@@ -163,7 +165,8 @@ One-thread CPU time per cell, 750 scenarios:
 | `case6470` | about 4 h | 3 min |
 
 The GridSFM backbone row of Table 2 ships as records only, one seed
-(`results/table2/gridsfm_seed0_*`).
+(`results/table2/gridsfm_seed0_*`). Its checkpoint is in the `gridsfm_reconfig` group, as the
+start of App. D's GridSFM reconfiguration; this repository does not re-score it on Table 2.
 
 To retrain a generalist (2.4-5.9 h per seed on one GPU), for `--maps physics` or `generic`:
 
@@ -171,6 +174,61 @@ To retrain a generalist (2.4-5.9 h per seed on one GPU), for `--maps physics` or
 python -m powerform.training.generalist --maps physics --seed 0              # Table 2, App. D
 python -m powerform.training.generalist --maps physics --seed 0 --ed-prior   # Figure 1 start
 ```
+
+### App. D: longer training (Figure 2)
+
+Seed 0 of the physics-maps and GridSFM decision rows of Table 1, retrained for 60k and
+120k steps (240k and 480k samples). Only the step count changes, so each cosine schedule
+ends at its own budget. The figure and the run ends need only `results/`:
+
+```
+python -m powerform.experiments.training_curve     # outputs/figures/figure2.{pdf,png}
+```
+
+To retrain, with the Table 1 corpus. Figure 2 needs both budgets of both rows: the 60k-step
+runs give the 240k markers, the 120k-step runs the lines and the 480k ends. A run snapshots
+every 500 steps; started again with `--resume`, it continues from the snapshot. Milestones
+every 5,000 steps go to `outputs/long_run/steps<N>/milestones/`, about 2.8 GB per
+120k-step physics run and 1.5 GB per GridSFM run. On one RTX 4090 shared with other runs,
+the physics row took 17 h at 60k steps and 37 h at 120k, the GridSFM row 11 h and 28 h.
+
+```
+python -m powerform.training.long_run --arch physics --seed 0 --steps 60000
+python -m powerform.training.long_run --arch physics --seed 0 --steps 120000
+python -m powerform.eval.milestones --arch physics --steps 120000          # CPU
+python -m powerform.experiments.long_run_records --arch physics --steps 60000 120000
+```
+
+and the same with `--arch gridsfm`. `long_run_records` writes the record files to
+`outputs/long_run/records/`; `python -m powerform.experiments.training_curve --long-run
+outputs/long_run/records` then draws your runs. The last milestone must reproduce the run's
+recorded cost or `milestones` stops; `--part k/n` lets n processes share one run's milestones.
+A finished run re-scores like a Table 1 row:
+`python -m powerform.training.case500 --eval-only checkpoints/case500_physics_steps120000_seed0.pt`.
+
+### App. D: reconfiguration with the GridSFM backbone (Figure 3)
+
+GridSFM has no line-status gate, so `powerform/model/baselines/gridsfm_track.py` adds one,
+inside every block's message passing, together with the line-status track of App. C.
+Task, training loop, scorer and settings are those of Figure 1. The table of settled
+steps and the figure need only `results/`:
+
+```
+python -m powerform.experiments.gridsfm_transfer   # outputs/reconfiguration/settled_steps.json, outputs/figures/figure3.{pdf,png}
+```
+
+To retrain, with OPFData `case57` and, for the pretrained arm, the `gridsfm_reconfig` group.
+All three pretrained seeds start from the one GridSFM generalist. An arm took 21-33 h at
+20,000 steps on one RTX 4090 shared with other runs.
+
+```
+python -m powerform.training.reconfiguration_gridsfm --arm pretrained --seed 0
+python -m powerform.training.reconfiguration_gridsfm --arm scratch --seed 0
+```
+
+The pretrained models' line scores collapsed to a spread of about 1e-8, so their top-3
+choice depends on floating-point rounding and a re-score on other hardware need not
+repeat their records; the scratch models re-score exactly.
 
 ### Agreement with the paper
 
@@ -196,6 +254,8 @@ do not set it, and it does not recover the shipped weights, which were trained w
 | physics maps (FlowNet, BusNet) | `maps="physics"`; `powerform/model/flownet.py`, `powerform/model/busnet.py` |
 | generic attention | `maps="generic"`; `powerform/model/generic.py` |
 | line-status track | `LineStatusTrack`, `ReconfigurationNet`; `powerform/model/line_track.py` |
+| GridSFM + attached gate (App. D) | `GatedGridSFM`, `GridSFMReconfigNet`; `powerform/model/baselines/gridsfm_track.py` |
+| settled step (App. D) | first step after which the infeasible fraction never exceeds 0.5; `settled_step` |
 | pretrained, from scratch | `--arm pretrained`, `--arm scratch` |
 | infeasible fraction | `infeasible_fraction` |
 | ED-prior input columns | `--ed-prior` (`n_cost_feats` 12; otherwise 10 for generalists, 0 for Table 1) |
@@ -217,6 +277,7 @@ table) and a full violations row (about 15 min).
 | `test_figures.py` | Figure 1 and the reconfiguration numbers regenerate from `results/` |
 | `test_opf_eval.py`, `test_violations.py` | scoring detects perturbed weights and inputs; printed cells match `results/` |
 | `test_table1.py` | every printed Table 1 and App. D row matches `results/table1/`; spot re-scores; the vendored GridSFM files match upstream |
+| `test_appendix_d.py` | Figures 2 and 3 and the settled-step table regenerate from `results/` and their numbers match the text; run folders export to the shipped long-run records; the GridSFM attachment's size, identity at start and gate; spot re-scores of the long runs and of a GridSFM reconfiguration model |
 
 ## Citation
 
